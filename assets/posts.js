@@ -1,0 +1,193 @@
+/* ============================================================
+   APSCC POSTS — single source of truth
+   Add a new post by prepending an object to APSCC_POSTS below.
+   The homepage (Recent Activities, Featured Research, Featured News)
+   and any page that renders from this list update automatically.
+
+   Fields:
+     date     : "YYYY-MM-DD" (used for sorting; newest first)
+     category : short label shown as the chip (e.g. "Research", "Recognition", "Conservation")
+     type     : "research" | "news" | "activity"  (drives featured slots + filtering)
+     title    : post title
+     teaser   : 1–2 sentence summary (3-line clamp in cards)
+     image    : path to the card/thumbnail image (relative to design/)
+     url      : the page to open (native post page, or a section link)
+     featured : (optional) true to prefer this in its type's featured slot
+   ============================================================ */
+window.APSCC_POSTS = [
+  {
+    date: "2026-09-01",
+    category: "Conservation",
+    type: "activity",
+    title: "APSCC at the WWQA Conference: Water Quality, Community Power, and a Sustainable Future",
+    teaser: "Dr. Nandhivarman Muthu represented APSCC at the UNEP-organised World Water Quality Alliance Conference in Nairobi, Kenya, connecting grassroots water action to global policy.",
+    image: "assets/posts/wwqa-kenya/hero.jpg",
+    url: "post-wwqa-kenya.html"
+  },
+  {
+    date: "2026-08-30",
+    category: "Education",
+    type: "activity",
+    title: "Global Young Soil Scientist Program (GYSS)",
+    teaser: "Engaging students and early-career researchers in soil science, conservation and sustainability \u2014 inspired by the FAO Global Soil Doctors Programme and implemented through the Topsoil Conservation Series 2024\u201325.",
+    image: "assets/posts/gyssp/hero.jpg",
+    url: "post-gyssp.html"
+  },
+  {
+    date: "2023-10-25",
+    category: "Research",
+    type: "research",
+    title: "APSCC Contributes to Springer's Encyclopedia of SDG 15: Life on Land",
+    teaser: "Dr. Golda A. Edwin and Dr. Nandhivarman Muthu contributed landmark chapters to Springer's Encyclopedia of the UN SDGs 'Life on Land' series — advancing evidence-based land management and soil science globally.",
+    image: "assets/posts/life-on-land-springer/cover.jpg",
+    url: "post-life-on-land-springer.html",
+    featured: true
+  },
+  {
+    date: "2024-12-05",
+    category: "Education",
+    type: "activity",
+    title: "Caring for Soils: APSCC Launches Topsoil Conservation Awareness Series 2024\u201325",
+    teaser: "Aligned with World Soil Day 2024's theme 'Measure, Monitor, Manage', APSCC launched a year-long awareness and capacity-building series engaging students and farmers in sustainable soil stewardship.",
+    image: "assets/posts/wsd-2024-25/hero.jpg",
+    url: "post-wsd-2024-25.html"
+  },
+  {
+    date: "2026-08-31",
+    category: "Partnership",
+    type: "activity",
+    title: "APSCC Keynote Speaker at UNDP Climate Action Academy, Bosnia & Herzegovina",
+    teaser: "Dr. Golda Edwin, APSCC Executive Director, delivered the keynote on biodiversity and protected areas at the UNDP Climate Action Academy in Sarajevo, bridging South Asian expertise with European policy.",
+    image: "assets/posts/bosnia-undp/hero.jpg",
+    url: "post-bosnia-undp.html"
+  },
+
+  {
+    date: "2024-09-21",
+    category: "Conservation",
+    type: "activity",
+    title: "400 kg of Waste Collected: APSCC Joins Pondicherry's International Coastal Cleanup Day 2024",
+    teaser: "Over 200 volunteers united at Kalapet Beach for International Coastal Cleanup Day 2024 under India's Swachh Sagar, Surakshit Sagar mission, collecting 400 kg of waste.",
+    image: "assets/posts/iccd-2024/hero.jpg",
+    url: "post-iccd-2024.html"
+  },
+  {
+    date: "2025-09-11",
+    category: "Program",
+    type: "activity",
+    title: "Traditional Organic Farmers Festival 2.0 — Rooting Sustainability in Puducherry",
+    teaser: "APSCC co-organised the Traditional Organic Farmers Festival 2.0 at Pondicherry University, uniting farmers, students, researchers and entrepreneurs to advance organic agriculture and green livelihoods.",
+    image: "assets/posts/farmfest-2025/hero.jpg",
+    url: "post-farmfest-2025.html"
+  },
+  {
+    date: "2024-03-30",
+    category: "Conservation",
+    type: "activity",
+    title: "Towards Zero Waste: APSCC Marks the First International Day of Zero Waste with Oulgaret Municipality",
+    teaser: "APSCC partnered with Oulgaret Municipality to host 'Towards Zero Waste and Sustainable Municipality' — an awareness and orientation session for Bulk Waste Generators in Puducherry on the inaugural International Day of Zero Waste 2024.",
+    image: "assets/posts/zwd-2024/hero.jpg",
+    url: "post-zwd-2024.html"
+  },
+
+  {
+    date: "2025-09-20",
+    category: "Conservation",
+    type: "activity",
+    title: "Cleaning Kalapet: APSCC Joins India's Coastal Cleanup Day 2025",
+    teaser: "APSCC co-organised International Coastal Cleanup Day 2025 at Kalapet Beach, Puducherry, as part of India's Swachh Sagar, Surakshit Sagar campaign \u2014 collecting data on marine litter to inform national policy.",
+    image: "assets/posts/iccd-2025/hero.jpg",
+    url: "post-iccd-2025.html"
+  },
+  {
+    date: "2026-09-03",
+    category: "Research",
+    type: "news",
+    title: "APSCC receives the ISOL NGO Award for Value-Based Sustainable Organizations",
+    teaser: "Recognised at the International Conference on Holistic Organisational Sustainability, Pondicherry University.",
+    image: "assets/posts/isol-ngo-award/award.jpg",
+    url: "post-isol-ngo-award.html",
+    featured: true
+  },
+  {
+    date: "2026-09-03",
+    category: "Research",
+    type: "research",
+    title: "Higher Education and SDG 15: Life on Land",
+    teaser: "APSCC-edited Emerald volume positioning universities as catalysts for land restoration and biodiversity conservation.",
+    image: "assets/posts/higher-education-sdg15/cover.jpg",
+    url: "post-higher-education-sdg15.html",
+    featured: true
+  },
+  {
+    date: "2026-09-03",
+    category: "Research",
+    type: "research",
+    title: "Curriculum Development for Sustainable Development",
+    teaser: "New Springer volume in the World Sustainability Series, co-edited by APSCC with contributions from 20+ countries.",
+    image: "assets/posts/curriculum-development-sd/cover.jpg",
+    url: "post-curriculum-development-sd.html"
+  },
+  {
+    date: "2026-05-27", category: "Biodiversity", type: "activity",
+    title: "BMC Capacity-Building Programme, Puducherry",
+    teaser: "A three-part series with the National Biodiversity Authority engaging 700+ participants across Puducherry's municipalities.",
+    image: "assets/bmc/bmc-inauguration.jpg", url: "apscc-bmc.html"
+  },
+  {
+    date: "2025-09-16", category: "Conservation", type: "activity",
+    title: "International Coastal Cleanup Day 2025",
+    teaser: "Beach cleanup mobilization across the Puducherry coastline with Pondicherry University & Forest Department.",
+    image: "assets/activities/coastal-cleanup-2025.png", url: "apscc-our-work.html"
+  },
+  {
+    date: "2015-12-16", category: "Recognition", type: "activity",
+    title: "Green Campus Champions & Change Maker Award",
+    teaser: "APSCC researchers honoured for conceptualising and implementing comprehensive campus greening initiatives.",
+    image: "assets/activities/Jnv-researcheraward.jpeg", url: "apscc-our-work.html"
+  },
+  {
+    date: "2013-04-05", category: "Event", type: "activity",
+    title: "The Green Campus Summit 2013",
+    teaser: "A global dialogue on sustainability in education — a first-of-its-kind summit for Indian campuses.",
+    image: "assets/activities/greencampussummit-2013-6239_8711244782_o.jpg", url: "apscc-our-work.html"
+  }
+];
+
+/* ---- Renderers (used by index.html; safe no-ops if containers absent) ---- */
+(function(){
+  var P = (window.APSCC_POSTS || []).slice().sort(function(a,b){ return b.date.localeCompare(a.date); });
+  function esc(s){ return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;"); }
+  function fmtYr(d){ return d.slice(0,4); }
+
+  // Recent activities (right column) — newest N across all types
+  var recent = document.getElementById("home-recent");
+  if (recent) {
+    recent.innerHTML = P.slice(0, 9).map(function(p){
+      return '<a class="act-item reveal" href="'+p.url+'">'
+           + '<span class="act-thumb"><img src="'+p.image+'" alt="'+esc(p.title)+'" loading="lazy"></span>'
+           + '<span class="act-meta"><span class="act-yr">'+fmtYr(p.date)+' · '+esc(p.category)+'</span>'
+           + '<span class="act-ttl">'+esc(p.title)+'</span></span></a>';
+    }).join("");
+  }
+
+  // Featured research (newest research, prefer featured)
+  function featOf(type){
+    var f = P.filter(function(p){return p.type===type && p.featured;});
+    if (f.length) return f[0];
+    var t = P.filter(function(p){return p.type===type;});
+    return t.length ? t[0] : null;
+  }
+  function renderFeat(id, p, kicker, moreLabel, moreHref){
+    var el = document.getElementById(id);
+    if (!el || !p) return;
+    el.setAttribute("href", p.url);
+    el.innerHTML = '<span class="feat-media"><img src="'+p.image+'" alt="'+esc(p.title)+'"></span>'
+      + '<span class="feat-body"><span class="feat-kicker">'+kicker+'</span>'
+      + '<span class="feat-title">'+esc(p.title)+'</span>'
+      + '<span class="feat-desc">'+esc(p.teaser)+'</span>'
+      + '<span class="feat-more">'+moreLabel+'</span></span>';
+  }
+  renderFeat("home-feat-research", featOf("research"), "Featured research", "Explore research →");
+  renderFeat("home-feat-news", featOf("news"), "Featured news", "All news &amp; media →");
+})();
