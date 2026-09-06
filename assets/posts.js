@@ -16,6 +16,99 @@
    ============================================================ */
 window.APSCC_POSTS = [
   {
+    date: "2021-06-05",
+    category: "Conservation",
+    type: "activity",
+    title: "Answering Nature's Call: APSCC Partners with The Green Institute for World Environment Day 2021",
+    teaser: "APSCC partnered with The Green Institute for a virtual symposium themed 'Nature is Calling' on World Environment Day 2021 \u2014 bringing together 25+ global sustainability leaders to discuss ecosystem restoration.",
+    image: "assets/posts/wed-2021/hero.jpg",
+    url: "post-wed-2021.html"
+  },
+  {
+    date: "2020-01-22",
+    category: "Conference",
+    type: "activity",
+    title: "Bridging Disciplines for a Sustainable Future: ICIAEESD 2020, Puducherry",
+    teaser: "APSCC co-organised the International Conference on Interdisciplinary Approaches to Environment, Ecosystems & Sustainable Development (ICIAEESD) in Puducherry — a multi-institution platform for academics, policymakers, and practitioners advancing SDG-aligned sustainability research.",
+    image: "assets/posts/iciaeesd-2020/hero.jpg",
+    url: "post-iciaeesd-2020.html"
+  },
+  {
+    date: "2019-07-12",
+    category: "Conference",
+    type: "activity",
+    title: "Green Ideas Take Flight: APSCC \u00d7 ClimateLaunchpad Pitch & Boot Camp, Puducherry 2019",
+    teaser: "APSCC co-organised the Puducherry Chapter of ClimateLaunchpad 2019 \u2014 the world's largest green business ideas competition \u2014 at Pondicherry University, incubating entrepreneurs with solutions for clean energy, waste, and eco-tech.",
+    image: "assets/posts/clp-2019/hero.jpg",
+    url: "post-clp-2019.html"
+  },
+
+  {
+    date: "2019-07-23",
+    category: "Conference",
+    type: "activity",
+    title: "Waste to Energy: APSCC Co-hosts National Workshop on Bioelectrochemical Technologies, Pondicherry University",
+    teaser: "APSCC co-organised a three-day SERB-DST national workshop on Bioelectrochemical Systems at Pondicherry University \u2014 exploring microbial fuel cells, wastewater treatment, and resource recovery technologies with leading experts from IIT Roorkee, CSIR-IICT, IIT Palakkad, and SVNIT Surat.",
+    image: "assets/posts/energy-conf-pu/hero.jpg",
+    url: "post-energy-conf-pu.html"
+  },
+
+  {
+    date: "2019-04-30",
+    category: "Education",
+    type: "activity",
+    title: "Health, Environment & the SDGs: APSCC Seminar on Good Health and Well-Being",
+    teaser: "APSCC organised a seminar on SDG 3 \u2014 Good Health and Well-Being \u2014 in collaboration with Pondicherry University and Durham University (UK), exploring the nexus between environmental sustainability and global public health.",
+    image: "assets/posts/well-being-sdg3/hero.jpg",
+    url: "post-well-being-sdg3.html"
+  },
+  {
+    date: "2020-11-01",
+    category: "Conservation",
+    type: "activity",
+    title: "Uniting for Wildlife: APSCC Launches the Wildlife Protection & Conservation Network",
+    teaser: "APSCC, Pondicherry University, and Government of Puducherry departments jointly launched the Wildlife Protection & Conservation Network — targeting nine species of concern including the Olive Ridley Turtle, Peacock, and Pondicherry Shark.",
+    image: "assets/posts/wildlife-network/hero.jpg",
+    url: "post-wildlife-network.html"
+  },
+
+  {
+    date: "2019-01-22",
+    category: "Program",
+    type: "activity",
+    title: "Breathing Cleaner: APSCC Brings NASA Clean Air Plants to the Chief Secretariat, Puducherry",
+    teaser: "APSCC partnered with the Chief Secretariat of Puducherry to introduce air-purifying plants \u2014 backed by NASA's Clean Air Study \u2014 as part of the Comprehensive Green Protocol, tackling VOCs, benzene, and formaldehyde in government offices.",
+    image: "assets/posts/secretariat-air-pol/hero.jpg",
+    url: "post-secretariat-air-pol.html"
+  },
+  {
+    date: "2019-07-29",
+    category: "Program",
+    type: "activity",
+    title: "A Government Office Goes Green: Green Protocol for the Chief Secretariat, Puducherry",
+    teaser: "APSCC partnered with the Chief Secretariat of Puducherry to implement 40+ green measures — from LED retrofits and rainwater harvesting to air-purifying plant networks — making it a model for sustainable government offices in India.",
+    image: "assets/posts/secretariat-gp/hero.jpg",
+    url: "post-secretariat-gp.html"
+  },
+  {
+    date: "2019-03-26",
+    category: "Conservation",
+    type: "activity",
+    title: "One Bag at a Time: APSCC Cotton Bag Drive at Kamban NSS Camp",
+    teaser: "During a 7-day NSS camp at Kamban Government Higher Secondary School, APSCC promoted a Cotton Bag Drive \u2014 distributing reusable bags and engaging students in practical action against single-use plastic pollution.",
+    image: "assets/posts/cotton-bag-drive/hero.jpg",
+    url: "post-cotton-bag-drive.html"
+  },
+  {
+    date: "2020-01-01",
+    category: "Education",
+    type: "activity",
+    title: "Green Protocol in Action: APSCC Capacity-Building Programme with Sorbonne, Pondicherry University & JNV",
+    teaser: "APSCC, in collaboration with Universit\u00e9 Panth\u00e9on-Sorbonne (Paris), Pondicherry University, and Jawahar Navodaya Vidyalaya, conducted a transformative training programme on the Green Protocol \u2014 covering regenerative agriculture, resource recovery, and green entrepreneurship.",
+    image: "assets/posts/capacity-building-gp/hero.jpg",
+    url: "post-capacity-building-gp.html"
+  },
+  {
     date: "2021-07-16",
     category: "Research",
     type: "research",
