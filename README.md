@@ -8,7 +8,7 @@ A static, self-contained website. Every image, video and asset is stored locally
 
 | Page | File |
 |------|------|
-| Home | `apscc-homepage-prototype.html` |
+| Home | `index.html` |
 | About | `apscc-about.html` |
 | Our Work | `apscc-our-work.html` |
 | Research & Publications | `apscc-research-publications.html` |
