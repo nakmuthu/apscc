@@ -26,10 +26,10 @@
     .button-dark{background:var(--moss);color:#fff;border:0}.button-dark:hover{background:#264836}
 
     /* Standardized Header */
-    .std-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid rgba(17,39,31,.14)}
+    .std-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid rgba(17,39,31,.14);overflow:visible}
     .std-nav{position:relative;max-width:1250px;margin:auto;padding:0 32px;min-height:104px;display:flex;align-items:center;justify-content:center;gap:20px}
     .std-brand{position:absolute;left:32px;top:50%;transform:translateY(-50%);display:flex;align-items:center}
-    .std-brand img{width:96px;height:96px;object-fit:contain;background:#fff;border-radius:8px}
+    .std-brand img{height:96px;width:auto;object-fit:contain}
     .std-menu{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0}
     .std-menu>li{position:relative}
     .std-menu>li>a{display:inline-flex;align-items:center;gap:5px;padding:10px 13px;font:600 .84rem/1 var(--sans);color:#11271f;white-space:nowrap;border-radius:5px;transition:background .15s,color .15s}
@@ -151,7 +151,7 @@
       .key-grid{grid-template-columns:1fr}
       .std-ftop{grid-template-columns:1fr}
       .std-nav{min-height:80px}
-      .std-brand img{width:72px;height:72px}
+      .std-brand img{height:66px;width:auto}
       .std-burger{display:block;position:absolute;right:32px;top:50%;transform:translateY(-50%)}
       .std-menu{display:none;position:absolute;top:80px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;border-bottom:1px solid rgba(17,39,31,.14);padding:10px 20px 18px;box-shadow:0 14px 24px rgba(17,39,31,.12)}
       .std-menu.open{display:flex}
@@ -166,7 +166,7 @@
   <header class="std-header">
     <nav class="std-nav" aria-label="Primary">
       <a class="std-brand" href="index.html" aria-label="APSCC home">
-        <img src="assets/shared/apscc-logo.png" alt="APSCC logo">
+        <img src="assets/shared/apscc-logo.png?v=1788682388" alt="APSCC logo">
       </a>
       <button class="std-burger" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
       <ul class="std-menu">

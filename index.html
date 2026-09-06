@@ -16,7 +16,7 @@
     /* Header — replace all # links with production APSCC routes */
     .site-header{position:absolute;z-index:5;inset:0 0 auto;color:#fff}.nav{height:92px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.26)}.brand{display:flex;align-items:center}.brand-logo{width:58px;height:58px;object-fit:contain;object-position:center;background:rgba(255,255,255,.96);border-radius:7px;padding:5px;box-shadow:0 0 22px rgba(255,255,255,.38)}.nav-links{display:flex;gap:25px;font-size:.9rem}.nav-links a{opacity:.9}.nav-links a:hover{opacity:1}.nav-cta{font-size:.86rem;border:1px solid #fff;padding:9px 14px}.menu-toggle{display:none;background:none;border:0;color:#fff;font-size:1.5rem;line-height:1}
     /* Hero */
-    .hero{min-height:720px;color:#fff;background:linear-gradient(90deg,rgba(6,20,14,.96),rgba(6,20,14,.8) 55%,rgba(6,20,14,.72)),url('assets/home/home-hero1.jpg?v=1788671663') center/cover;display:flex;align-items:end}.hero-inner{padding-bottom:73px}.hero-kicker{display:flex;gap:14px;font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase}.hero-kicker i{font-style:normal;color:var(--lime)}.hero h1{font:500 clamp(3.35rem,7.3vw,7.3rem)/.92 var(--serif);letter-spacing:-.06em;max-width:975px;margin:25px 0}.hero-bottom{display:flex;justify-content:space-between;align-items:end;gap:32px}.hero-copy{max-width:510px;font-size:1.05rem;color:rgba(255,255,255,.87)}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;position:relative;z-index:2}.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 19px;font-weight:700;font-size:.9rem;transition:.2s}.button-primary{background:var(--lime);color:var(--ink)}.button-primary:hover{background:#e2eea7}.button-ghost{border:1px solid rgba(255,255,255,.8);color:#fff}.button-ghost:hover{background:#fff;color:var(--ink)}.hero-scroll{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;writing-mode:vertical-rl;opacity:.84}
+    .hero{min-height:720px;color:#fff;background:linear-gradient(90deg,rgba(6,20,14,.96),rgba(6,20,14,.8) 55%,rgba(6,20,14,.72)),url('assets/home/home-hero1.jpg?v=1788683142') center/cover;display:flex;align-items:end}.hero-inner{padding-bottom:73px}.hero-kicker{display:flex;gap:14px;font:500 13px var(--mono);letter-spacing:.08em;text-transform:uppercase}.hero-kicker i{font-style:normal;color:var(--lime)}.hero h1{font:500 clamp(3.35rem,7.3vw,7.3rem)/.92 var(--serif);letter-spacing:-.06em;max-width:975px;margin:25px 0}.hero-bottom{display:flex;justify-content:space-between;align-items:end;gap:32px}.hero-copy{max-width:510px;font-size:1.05rem;color:rgba(255,255,255,.87)}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;position:relative;z-index:2}.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 19px;font-weight:700;font-size:.9rem;transition:.2s}.button-primary{background:var(--lime);color:var(--ink)}.button-primary:hover{background:#e2eea7}.button-ghost{border:1px solid rgba(255,255,255,.8);color:#fff}.button-ghost:hover{background:#fff;color:var(--ink)}.hero-scroll{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;writing-mode:vertical-rl;opacity:.84}
     /* Recognition */
     .recognition{background:var(--cream);padding:28px 0}.recognition-grid{display:grid;grid-template-columns:1.6fr repeat(5,1fr);align-items:center;gap:20px}.recognition-label{font:500 11px/1.35 var(--mono);letter-spacing:.09em;text-transform:uppercase}.recognition-item{border-left:1px solid var(--line);padding-left:16px;font:500 .77rem/1.25 var(--sans)}.recognition-item strong{display:block;font:600 1.05rem var(--serif);letter-spacing:-.02em}
     /* Challenges */
@@ -90,10 +90,10 @@
 /* STANDARDIZED-COMPONENTS */
 
 /* ===== Standardized header (white strip) ===== */
-.std-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid rgba(17,39,31,.14)}
+.std-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid rgba(17,39,31,.14);overflow:visible}
 .std-nav{position:relative;max-width:1250px;margin:auto;padding:0 32px;min-height:104px;display:flex;align-items:center;justify-content:center;gap:20px}
 .std-brand{position:absolute;left:32px;top:50%;transform:translateY(-50%);display:flex;align-items:center}
-.std-brand img{width:96px;height:96px;object-fit:contain;background:#fff;border-radius:8px}
+.std-brand img{height:96px;width:auto;object-fit:contain}
 .std-menu{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0}
 .std-menu>li{position:relative}
 .std-menu>li>a{display:inline-flex;align-items:center;gap:5px;padding:10px 13px;font:600 .84rem/1 var(--sans,"DM Sans",sans-serif);color:#11271f;white-space:nowrap;border-radius:5px;transition:background .15s,color .15s}
@@ -107,7 +107,7 @@
 .std-burger{display:none;background:none;border:0;font-size:1.5rem;color:#11271f;cursor:pointer}
 @media(max-width:960px){
  .std-burger{display:block;position:absolute;right:20px;top:50%;transform:translateY(-50%)}
- .std-brand img{width:72px;height:72px}
+ .std-brand img{height:66px;width:auto}
  .std-menu{display:none;position:absolute;top:104px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;border-bottom:1px solid rgba(17,39,31,.14);padding:10px 20px 18px;box-shadow:0 14px 24px rgba(17,39,31,.12)}
  .std-menu.open{display:flex}
  .std-menu>li>a{padding:12px 8px}
@@ -141,7 +141,7 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="std-header"><nav class="std-nav" aria-label="Primary">
-<a class="std-brand" href="index.html" aria-label="APSCC home"><img src="assets/shared/apscc-logo.png" alt="APSCC logo"></a>
+<a class="std-brand" href="index.html" aria-label="APSCC home"><img src="assets/shared/apscc-logo.png?v=1788682388" alt="APSCC logo"></a>
 <button class="std-burger" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
 <ul class="std-menu">
 <li><a href="index.html" class="active">Home</a></li>
@@ -192,62 +192,27 @@
       <div class="eyebrow">Knowledge hub</div>
       <h2 class="section-title reveal">Ideas made useful.</h2>
       <div class="hub-two">
-        <!-- LEFT: featured research + featured news -->
+        <!-- LEFT: featured research + featured news (auto-populated from assets/posts.js) -->
         <div class="hub-left">
-          <a class="feat-card reveal" href="apscc-research-publications.html">
-            <span class="feat-media"><img src="assets/research/featured-book.jpg" alt="Higher Education and SDG15: Life on Land"></span>
+          <a class="feat-card reveal" id="home-feat-research" href="apscc-research-publications.html">
+            <span class="feat-media"><img src="assets/research/featured-book.jpg" alt="Featured research"></span>
             <span class="feat-body"><span class="feat-kicker">Featured research</span>
             <span class="feat-title">Higher Education &amp; SDG 15: Life on Land</span>
-            <span class="feat-desc">APSCC-edited volume (Emerald, 2026) positioning universities as catalysts for land restoration and biodiversity.</span>
+            <span class="feat-desc">APSCC-edited volume positioning universities as catalysts for land restoration and biodiversity.</span>
             <span class="feat-more">Explore research →</span></span>
           </a>
-          <a class="feat-card reveal" href="apscc-news-media.html">
-            <span class="feat-media"><img src="assets/news/featured-gcgc-governor.png" alt="Green Campuses for Green Cities launch"></span>
+          <a class="feat-card reveal" id="home-feat-news" href="apscc-news-media.html">
+            <span class="feat-media"><img src="assets/news/featured-gcgc-governor.png" alt="Featured news"></span>
             <span class="feat-body"><span class="feat-kicker">Featured news</span>
             <span class="feat-title">Campaign envisaging green campuses across 1,000 cities by 2030</span>
             <span class="feat-desc">The Hindu covers the launch of the Green Campuses for Green Cities campaign led by APSCC.</span>
             <span class="feat-more">All news &amp; media →</span></span>
           </a>
         </div>
-        <!-- RIGHT: 3 recent activities -->
+        <!-- RIGHT: recent activities (auto-populated from assets/posts.js, newest first) -->
         <div class="hub-right">
           <div class="eyebrow">Recent activities</div>
-          <a class="act-item reveal" href="apscc-our-work.html">
-            <span class="act-thumb"><img src="assets/activities/coastal-cleanup-2025.png" alt="International Coastal Cleanup Day 2025"></span>
-            <span class="act-meta"><span class="act-yr">2025 · Conservation</span><span class="act-ttl">International Coastal Cleanup Day 2025</span></span>
-          </a>
-          <a class="act-item reveal" href="apscc-our-work.html">
-            <span class="act-thumb"><img src="assets/activities/Jnv-researcheraward.jpeg" alt="Green Campus Initiative at JNV"></span>
-            <span class="act-meta"><span class="act-yr">Recognition</span><span class="act-ttl">Green Campus Champions &amp; Change Maker Award</span></span>
-          </a>
-          <a class="act-item reveal" href="apscc-our-work.html">
-            <span class="act-thumb"><img src="assets/activities/greencampussummit-2013-6239_8711244782_o.jpg" alt="Green Campus Summit"></span>
-            <span class="act-meta"><span class="act-yr">Flagship · Event</span><span class="act-ttl">The Green Campus Summit</span></span>
-          </a>
-          <a class="act-item reveal" href="apscc-bmc.html">
-            <span class="act-thumb"><img src="assets/bmc/bmc-inauguration.jpg" alt="BMC capacity-building programme"></span>
-            <span class="act-meta"><span class="act-yr">2026 · Biodiversity</span><span class="act-ttl">BMC Capacity-Building Programme, Puducherry</span></span>
-          </a>
-          <a class="act-item reveal" href="apscc-under.html">
-            <span class="act-thumb"><img src="assets/under/hero-restore-life.jpg" alt="UN Decade ecosystem restoration"></span>
-            <span class="act-meta"><span class="act-yr">2021–2030 · UN Decade</span><span class="act-ttl">Cities &amp; Youth Restoration Challenge</span></span>
-          </a>
-          <a class="act-item reveal" href="apscc-yss.html">
-            <span class="act-thumb"><img src="assets/yss/yss-1.jpg" alt="Young Soil Scientist programme"></span>
-            <span class="act-meta"><span class="act-yr">Education · Soils</span><span class="act-ttl">Young Soil Scientist Programme</span></span>
-          </a>
-          <a class="act-item reveal" href="apscc-iccarp.html">
-            <span class="act-thumb"><img src="assets/iccarp/iccarp-hero.jpg" alt="ICCARP programme"></span>
-            <span class="act-meta"><span class="act-yr">Programme</span><span class="act-ttl">ICCARP — Climate Adaptation &amp; Resilience</span></span>
-          </a>
-          <a class="act-item reveal" href="apscc-essw.html">
-            <span class="act-thumb"><img src="assets/under/card-essw.jpg" alt="Environmental Stewardship & Sustainability Workshop"></span>
-            <span class="act-meta"><span class="act-yr">Workshop</span><span class="act-ttl">Environmental Stewardship &amp; Sustainability Workshop</span></span>
-          </a>
-          <a class="act-item reveal" href="apscc-scc.html">
-            <span class="act-thumb"><img src="assets/under/card-scc.jpg" alt="Sustainable Campus Challenge"></span>
-            <span class="act-meta"><span class="act-yr">Campus · Challenge</span><span class="act-ttl">Game ON — Sustainable Campus Challenge</span></span>
-          </a>
+          <div id="home-recent"></div>
           <p style="margin-top:20px"><a class="text-link" href="apscc-our-work.html">All activities <span>→</span></a></p>
         </div>
       </div>
@@ -272,6 +237,7 @@
 </div></footer>
   
 
+<script src="assets/posts.js"></script>
 <script>
 (function(){
   var reveals=document.querySelectorAll('.reveal');
