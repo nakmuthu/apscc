@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="APSCC homepage prototype — science, policy, people and action for sustainable campuses and communities.">
+  <title>APSCC — Science, Policy, People, Action</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:opsz,wght@5..120,500;5..120,600&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#11271f;--paper:#f5f3ed;--cream:#eae6d9;--moss:#315c45;--lime:#c9dc67;--clay:#bd6846;--line:rgba(17,39,31,.17);--sans:"DM Sans",Arial,sans-serif;--serif:"Playfair Display",Georgia,serif;--mono:"DM Mono",monospace}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.5} a{color:inherit;text-decoration:none} img{max-width:100%;display:block} button{font:inherit}.skip{position:absolute;left:-10000px;top:auto}.skip:focus{left:1rem;top:1rem;z-index:99;background:#fff;padding:.7rem 1rem;border:2px solid var(--ink)}
+    .shell{max-width:1280px;margin:auto;padding:0 32px}.eyebrow{font:500 11px/1.2 var(--mono);letter-spacing:.1em;text-transform:uppercase}.eyebrow::before{content:"";display:inline-block;width:25px;border-top:1px solid currentColor;margin:0 9px 3px 0}.section{padding:112px 0}.section-title{font:500 clamp(2.5rem,5vw,5.35rem)/.98 var(--serif);letter-spacing:-.045em;max-width:760px;margin:20px 0 0}.lede{font-size:1.12rem;max-width:580px;margin:24px 0 0;color:#385047}.text-link{display:inline-flex;gap:.5em;align-items:center;border-bottom:1px solid currentColor;padding-bottom:4px;font-weight:700}.text-link span{transition:transform .2s}.text-link:hover span{transform:translateX(4px)}
+    /* Header — replace all # links with production APSCC routes */
+    .site-header{position:absolute;z-index:5;inset:0 0 auto;color:#fff}.nav{height:92px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.26)}.brand{display:flex;align-items:center}.brand-logo{width:58px;height:58px;object-fit:contain;object-position:center;background:rgba(255,255,255,.96);border-radius:7px;padding:5px;box-shadow:0 0 22px rgba(255,255,255,.38)}.nav-links{display:flex;gap:25px;font-size:.9rem}.nav-links a{opacity:.9}.nav-links a:hover{opacity:1}.nav-cta{font-size:.86rem;border:1px solid #fff;padding:9px 14px}.menu-toggle{display:none;background:none;border:0;color:#fff;font-size:1.5rem;line-height:1}
+    /* Hero */
+    .hero{min-height:720px;color:#fff;background:linear-gradient(90deg,rgba(6,20,14,.96),rgba(6,20,14,.8) 55%,rgba(6,20,14,.72)),url('assets/home/home-hero1.jpg?v=1788671663') center/cover;display:flex;align-items:end}.hero-inner{padding-bottom:73px}.hero-kicker{display:flex;gap:14px;font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase}.hero-kicker i{font-style:normal;color:var(--lime)}.hero h1{font:500 clamp(3.35rem,7.3vw,7.3rem)/.92 var(--serif);letter-spacing:-.06em;max-width:975px;margin:25px 0}.hero-bottom{display:flex;justify-content:space-between;align-items:end;gap:32px}.hero-copy{max-width:510px;font-size:1.05rem;color:rgba(255,255,255,.87)}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;position:relative;z-index:2}.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 19px;font-weight:700;font-size:.9rem;transition:.2s}.button-primary{background:var(--lime);color:var(--ink)}.button-primary:hover{background:#e2eea7}.button-ghost{border:1px solid rgba(255,255,255,.8);color:#fff}.button-ghost:hover{background:#fff;color:var(--ink)}.hero-scroll{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;writing-mode:vertical-rl;opacity:.84}
+    /* Recognition */
+    .recognition{background:var(--cream);padding:28px 0}.recognition-grid{display:grid;grid-template-columns:1.6fr repeat(5,1fr);align-items:center;gap:20px}.recognition-label{font:500 11px/1.35 var(--mono);letter-spacing:.09em;text-transform:uppercase}.recognition-item{border-left:1px solid var(--line);padding-left:16px;font:500 .77rem/1.25 var(--sans)}.recognition-item strong{display:block;font:600 1.05rem var(--serif);letter-spacing:-.02em}
+    /* Challenges */
+    .challenges{background:var(--ink);color:#f8f5ec}.challenges .lede{color:#bed1c4}.challenge-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.24);margin-top:68px}.challenge{padding:25px 28px 12px 0;margin-right:28px;border-right:1px solid rgba(255,255,255,.24)}.challenge:last-child{border:0}.challenge-no{color:var(--lime);font:500 11px var(--mono)}.challenge h3{font:500 2.15rem/1 var(--serif);margin:39px 0 16px;letter-spacing:-.035em}.challenge p{color:#c7d3cb;margin:0;max-width:320px}.challenge-icon{font-size:2.5rem;float:right}
+    /* Profile */
+    .profile-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:9vw;align-items:start}.profile-copy p{font:500 clamp(1.35rem,2.3vw,2rem)/1.3 var(--serif);letter-spacing:-.02em;margin:28px 0}.profile-aside{border-top:1px solid var(--ink);padding-top:18px;margin-top:17px}.profile-aside div{padding:15px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px}.profile-aside b{font:500 1.4rem var(--serif)}.profile-aside span{font-size:.84rem;text-align:right;color:#52665d;max-width:230px}
+    /* ICCARP */
+    .programs{background:#dce4d6}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px}.section-head .section-title{max-width:690px}.program-grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:64px;border-top:1px solid var(--line)}.program{min-height:250px;padding:23px 23px 20px 0;margin:0 24px 24px 0;border-right:1px solid var(--line);border-bottom:1px solid var(--line);position:relative}.program:nth-child(3n){border-right:0;margin-right:0}.program-number{font:500 11px var(--mono);color:#52705d}.program h3{font:500 1.8rem/1.06 var(--serif);letter-spacing:-.03em;margin:47px 0 12px}.program p{font-size:.92rem;color:#496157;max-width:280px;margin:0}.program a{position:absolute;right:20px;bottom:18px;font-size:1.15rem}.program a:hover{color:var(--moss)}
+    /* Flagship */
+    .flagship{background:var(--moss);color:#fff;overflow:hidden}.flagship-grid{display:grid;grid-template-columns:1.02fr .98fr;min-height:660px}.flag-copy{padding:104px 8vw 85px 0;position:relative}.flag-copy h2{font:500 clamp(3rem,5.4vw,5.6rem)/.93 var(--serif);letter-spacing:-.055em;margin:23px 0}.flag-copy p{max-width:505px;color:#d6e0c4;font-size:1.08rem}.flag-label{color:var(--lime)}.campaign-line{margin:42px 0 0;border-left:1px solid var(--lime);padding-left:18px;font:500 1.06rem/1.3 var(--serif);max-width:400px}.flag-image{background:url('assets/home/gcgc-home.png') center/cover;min-height:420px}.flag-word{position:absolute;bottom:19px;left:0;pointer-events:none;z-index:0;color:rgba(255,255,255,.12);font:500 clamp(4rem,10vw,10rem)/.7 var(--serif);white-space:nowrap;letter-spacing:-.08em}
+    /* Implementation */
+    .practice-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:58px}.practice-card{padding:28px;background:#fff;border-top:2px solid var(--moss)}.practice-card h3{font:500 1.8rem/1.1 var(--serif);margin:34px 0 10px}.practice-card p{color:#4b6358;max-width:450px}.pill{font:500 10px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--moss)}
+    /* Global */
+    .global{background:#d8c6aa}.global-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:8vw}.global-list{border-top:1px solid rgba(17,39,31,.45);margin-top:31px}.global-list div{padding:15px 0;border-bottom:1px solid rgba(17,39,31,.25);display:grid;grid-template-columns:135px 1fr;gap:20px;font-size:.92rem}.global-list b{font:500 1.05rem var(--serif)}.global-art{min-height:470px;background:url('assets/home/global-canopy.jpg') center/cover;position:relative}.global-art:after{content:"Puducherry · India\A Global Engagement";white-space:pre;position:absolute;bottom:0;left:0;background:var(--ink);color:#fff;padding:18px 23px;font:500 11px/1.7 var(--mono);letter-spacing:.08em;text-transform:uppercase}
+    /* Impact */
+    .impact-header{display:grid;grid-template-columns:1fr 1fr;gap:5vw}.impact-note{align-self:end;color:#50685d}.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:52px}.impact-card{min-height:292px;padding:24px;background:#e9e5da;display:flex;flex-direction:column;justify-content:end}.impact-card:nth-child(2){background:#5f806a;color:white}.impact-card:nth-child(3){background:#e3bf66}.impact-card .eyebrow{margin-bottom:auto}.impact-card h3{font:500 1.85rem/1.06 var(--serif);letter-spacing:-.035em;margin:28px 0 8px}.impact-card p{margin:0;font-size:.91rem;max-width:290px}.impact-foot{margin-top:25px;font-size:.8rem;color:#56675e}
+    /* Knowledge & news */
+    .hub{background:#fff}.hub-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:62px}.hub-item{padding:22px 0;border-top:1px solid var(--ink)}.hub-item:last-child{border-bottom:1px solid var(--ink)}.hub-item .type{font:500 10px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#4f705a}.hub-item h3{font:500 1.6rem/1.14 var(--serif);margin:27px 0 11px;letter-spacing:-.025em}.hub-item p{color:#54695f;margin:0 0 22px}.news-list{border-top:1px solid var(--ink)}.news{display:grid;grid-template-columns:88px 1fr auto;gap:15px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start}.news time{font:500 10px/1.5 var(--mono);letter-spacing:.05em;text-transform:uppercase;color:#52685c}.news h3{font-size:1.02rem;line-height:1.3;margin:0}.news a{font-size:1.15rem}
+    /* CTA / footer */
+    .partner{color:#fff;background:var(--ink);padding:110px 0}.partner-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:7vw}.partner .section-title{color:#fff}.partner p{color:#c4d5ca;font-size:1.08rem;max-width:500px}.partner-types{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid rgba(255,255,255,.3);margin-top:38px}.partner-types a{padding:13px 0;border-bottom:1px solid rgba(255,255,255,.25);font:500 .95rem var(--serif)}.partner-types a:nth-child(odd){margin-right:25px}.partner-side{align-self:end;background:var(--moss);padding:32px}.partner-side h3{font:500 2rem/1 var(--serif);margin:0 0 15px}.partner-side p{font-size:.92rem;margin:0 0 23px}.site-footer{background:#0b1b15;color:#d7e0d9;padding:58px 0 23px}.footer-top{display:grid;grid-template-columns:2fr repeat(3,1fr);gap:32px}.footer-brand{font:500 1.6rem var(--serif);color:#fff}.footer-blurb{font-size:.86rem;line-height:1.55;color:#aebdb4;max-width:285px}.footer-col h4{font:500 10px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--lime);margin:0 0 12px}.footer-col a{display:block;font-size:.84rem;margin:7px 0;color:#d7e0d9}.footer-col a:hover{text-decoration:underline}.footer-bottom{border-top:1px solid rgba(255,255,255,.18);margin-top:48px;padding-top:18px;display:flex;justify-content:space-between;gap:20px;color:#93a59a;font-size:.72rem}.footer-bottom a{text-decoration:underline}
+    .reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}.reveal.show{opacity:1;transform:none}
+    @media(max-width:800px){.shell{padding:0 21px}.section{padding:76px 0}.site-header{background:linear-gradient(#10261d,transparent)}.nav{height:72px}.nav-links{display:none;position:absolute;top:72px;left:0;right:0;background:var(--ink);padding:18px 21px 25px;flex-direction:column;gap:16px}.nav-links.open{display:flex}.nav-cta{display:none}.menu-toggle{display:block}.hero{min-height:700px}.hero-inner{padding-bottom:36px}.hero-bottom{display:block}.hero-scroll{display:none}.recognition-grid{grid-template-columns:1fr 1fr;gap:17px}.recognition-label{grid-column:1/-1}.recognition-item{border-left:0;padding-left:0}.challenge-grid,.program-grid,.impact-grid{grid-template-columns:1fr}.challenge,.program{margin-right:0;border-right:0}.challenge{padding-right:0}.program:nth-child(3n){border-bottom:1px solid var(--line)}.profile-grid,.flagship-grid,.global-grid,.impact-header,.hub-grid,.partner-grid{grid-template-columns:1fr;gap:35px}.section-head{display:block}.section-head .text-link{margin-top:26px}.flag-copy{padding:76px 0 60px}.flag-image{min-height:360px}.practice-grid{grid-template-columns:1fr}.global-art{min-height:360px}.hub-grid{margin-top:40px}.footer-top{grid-template-columns:1fr 1fr}.footer-top>div:first-child{grid-column:1/-1}.footer-bottom{display:block}.footer-bottom a{display:inline-block;margin-top:7px}.impact-card{min-height:235px}.global-list div{grid-template-columns:105px 1fr}}
+  
+.ge-card:hover @media(max-width:760px){}
+
+    /* Case-study style programme scroller */
+    .cs-section{background:var(--paper);padding:100px 0}
+    .cs-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:40px}
+    .cs-nav{display:flex;gap:10px}
+    .cs-arrow{width:46px;height:46px;border:1px solid var(--ink);background:transparent;color:var(--ink);font-size:1.4rem;line-height:1;cursor:pointer;border-radius:50%;transition:.18s;display:grid;place-items:center}
+    .cs-arrow:hover{background:var(--ink);color:var(--paper)}
+    .cs-track-wrap{overflow:hidden}
+    .cs-track{display:flex;gap:28px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scroll-behavior:smooth;padding:6px 5vw 30px;margin:auto;scrollbar-width:none;justify-content:flex-start}
+    .cs-track::-webkit-scrollbar{display:none}.cs-slide{flex:0 0 88%;scroll-snap-align:center;display:block;border-radius:6px;overflow:hidden;box-shadow:0 14px 34px rgba(17,39,31,.16);transition:transform .25s,box-shadow .25s}.cs-slide:hover{transform:translateY(-4px);box-shadow:0 20px 46px rgba(17,39,31,.22)}.cs-slide img{width:100%;height:auto;display:block}@media(min-width:900px){.cs-slide{flex-basis:1000px;max-width:90vw}}@media(max-width:760px){.cs-slide{flex-basis:92%}}
+    
+    
+    
+    
+    .cs-card:hover 
+    
+    
+    
+    
+    
+    @media(max-width:760px){.cs-section{padding:70px 0}.cs-head{display:block}.cs-nav{margin-top:18px}.cs-track{padding-left:20px;padding-right:20px}}
+
+
+    /* Knowledge hub — featured left + activities right */
+    .hub-two{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;margin-top:56px}
+    .hub-left{display:grid;gap:20px}
+    .feat-card{display:grid;grid-template-columns:.9fr 1.1fr;background:var(--paper);border:1px solid var(--line);overflow:hidden;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s}
+    .feat-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(17,39,31,.13)}
+    .feat-media{overflow:hidden;background:#dce4d6;min-height:150px}
+    .feat-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+    .feat-card:hover .feat-media img{transform:scale(1.05)}
+    .feat-body{padding:20px 22px;display:flex;flex-direction:column}
+    .feat-kicker{font:500 10px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--clay)}
+    .feat-title{font:500 1.28rem/1.12 var(--serif);letter-spacing:-.025em;margin:9px 0 8px;color:var(--ink)}
+    .feat-desc{font-size:.84rem;color:#50665a;flex:1}
+    .feat-more{margin-top:16px;font-weight:700;font-size:.83rem;color:var(--moss)}
+    .hub-right{border-left:1px solid var(--line);padding-left:34px}
+    .act-item{display:flex;gap:14px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit;transition:.18s}
+    .act-item:hover{padding-left:6px}
+    .act-thumb{flex:0 0 82px;width:82px;height:60px;overflow:hidden;background:#dce4d6}
+    .act-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+    .act-meta{display:flex;flex-direction:column;gap:4px}
+    .act-yr{font:500 9px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--moss)}
+    .act-ttl{font:500 1.02rem/1.15 var(--serif);letter-spacing:-.02em;color:var(--ink)}
+    @media(max-width:900px){.hub-two{grid-template-columns:1fr;gap:40px}.hub-right{border-left:0;padding-left:0}.feat-card{grid-template-columns:1fr}.feat-media{min-height:180px}}
+
+/* STANDARDIZED-COMPONENTS */
+
+/* ===== Standardized header (white strip) ===== */
+.std-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid rgba(17,39,31,.14)}
+.std-nav{position:relative;max-width:1250px;margin:auto;padding:0 32px;min-height:104px;display:flex;align-items:center;justify-content:center;gap:20px}
+.std-brand{position:absolute;left:32px;top:50%;transform:translateY(-50%);display:flex;align-items:center}
+.std-brand img{width:96px;height:96px;object-fit:contain;background:#fff;border-radius:8px}
+.std-menu{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0}
+.std-menu>li{position:relative}
+.std-menu>li>a{display:inline-flex;align-items:center;gap:5px;padding:10px 13px;font:600 .84rem/1 var(--sans,"DM Sans",sans-serif);color:#11271f;white-space:nowrap;border-radius:5px;transition:background .15s,color .15s}
+.std-menu>li>a:hover{background:#eef1e6;color:#315c45}
+.std-menu>li>a.active{color:#315c45}
+.std-menu>li.has-dd>a::after{content:"\25BE";font-size:.7em;opacity:.7;margin-left:2px}
+.std-dd{position:absolute;top:calc(100% + 4px);left:0;min-width:290px;background:#fff;border:1px solid rgba(17,39,31,.14);box-shadow:0 14px 34px rgba(17,39,31,.16);border-radius:8px;padding:8px;opacity:0;visibility:hidden;transform:translateY(6px);transition:.18s;list-style:none;margin:0}
+.std-menu>li.has-dd:hover .std-dd,.std-menu>li.has-dd:focus-within .std-dd{opacity:1;visibility:visible;transform:translateY(0)}
+.std-dd li a{display:block;padding:9px 12px;font:500 .83rem/1.3 var(--sans,"DM Sans",sans-serif);color:#28402f;border-radius:5px}
+.std-dd li a:hover{background:#eef1e6;color:#315c45}
+.std-burger{display:none;background:none;border:0;font-size:1.5rem;color:#11271f;cursor:pointer}
+@media(max-width:960px){
+ .std-burger{display:block;position:absolute;right:20px;top:50%;transform:translateY(-50%)}
+ .std-brand img{width:72px;height:72px}
+ .std-menu{display:none;position:absolute;top:104px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;border-bottom:1px solid rgba(17,39,31,.14);padding:10px 20px 18px;box-shadow:0 14px 24px rgba(17,39,31,.12)}
+ .std-menu.open{display:flex}
+ .std-menu>li>a{padding:12px 8px}
+ .std-dd{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;border-left:2px solid rgba(17,39,31,.12);border-radius:0;margin:2px 0 6px 14px;padding:2px 0}
+ .std-menu>li.has-dd>a::after{margin-left:auto}
+}
+/* ===== Standardized footer ===== */
+.std-footer{background:#0b1b15;color:#d7e0d9;padding:56px 0 22px}
+.std-footer .wrap{max-width:1250px;margin:auto;padding:0 32px}
+.std-ftop{display:grid;grid-template-columns:1.6fr 1fr 1.3fr;gap:34px}
+.std-fbrand{font:500 1.55rem var(--serif,"Playfair Display",serif);color:#fff;margin:0 0 10px}
+.std-fblurb{font-size:.85rem;line-height:1.55;color:#aebdb4;max-width:300px;margin:0 0 18px}
+.std-social{display:flex;gap:10px}
+.std-social a{width:38px;height:38px;border:1px solid rgba(255,255,255,.28);border-radius:50%;display:grid;place-items:center;color:#d7e0d9;transition:.15s}
+.std-social a:hover{background:var(--lime,#c9dc67);border-color:var(--lime,#c9dc67);color:#11271f}
+.std-social svg{width:17px;height:17px;fill:currentColor}
+.std-fcol h4{font:500 10px var(--mono,"DM Mono",monospace);letter-spacing:.08em;text-transform:uppercase;color:var(--lime,#c9dc67);margin:0 0 13px}
+.std-fcol a{display:block;font-size:.83rem;margin:8px 0;color:#d7e0d9;text-decoration:none}
+.std-fcol a:hover{text-decoration:underline}
+.std-latest .lp{display:block;padding:11px 0;border-top:1px solid rgba(255,255,255,.14);text-decoration:none}
+.std-latest .lp:first-of-type{border-top:0}
+.std-latest .lp .k{font:500 9px var(--mono,"DM Mono",monospace);letter-spacing:.07em;text-transform:uppercase;color:var(--lime,#c9dc67)}
+.std-latest .lp .t{display:block;font:500 .9rem/1.25 var(--serif,"Playfair Display",serif);color:#eef3ee;margin-top:3px}
+.std-latest .lp:hover .t{text-decoration:underline}
+.std-fbottom{border-top:1px solid rgba(255,255,255,.16);margin-top:44px;padding-top:18px;display:flex;justify-content:space-between;gap:18px;color:#93a59a;font-size:.75rem;flex-wrap:wrap}
+.std-fbottom a{color:#93a59a;text-decoration:underline}
+@media(max-width:820px){.std-ftop{grid-template-columns:1fr;gap:26px}.std-fbottom{flex-direction:column}}
+
+</style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="std-header"><nav class="std-nav" aria-label="Primary">
+<a class="std-brand" href="apscc-homepage-prototype.html" aria-label="APSCC home"><img src="assets/shared/apscc-logo.png" alt="APSCC logo"></a>
+<button class="std-burger" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+<ul class="std-menu">
+<li><a href="apscc-homepage-prototype.html" class="active">Home</a></li>
+<li><a href="apscc-about.html">About</a></li>
+<li><a href="apscc-our-work.html">Our Work</a></li>
+<li class="has-dd"><a href="#" aria-haspopup="true">Global Engagement</a><ul class="std-dd"><li><a href="apscc-gcgc.html">Green Campus for Green Cities (GCGC)</a></li><li><a href="apscc-iccarp.html">ICCARP</a></li><li><a href="apscc-yss.html">Young Soil Scientist</a></li><li><a href="apscc-bmc.html">Biodiversity Management Committee (BMC)</a></li><li><a href="apscc-under.html">UN Decade on Ecosystem Restoration Challenge</a></li><li><a href="apscc-restore-life.html">Restore Life</a></li><li><a href="apscc-essw.html">Environmental Stewardship &amp; Sustainability Workshop</a></li><li><a href="apscc-scc.html">Game ON - Sustainable Campus Challenge</a></li></ul></li>
+<li><a href="apscc-research-publications.html">Research</a></li>
+<li><a href="apscc-news-media.html">News &amp; Media</a></li>
+<li class="has-dd"><a href="#" aria-haspopup="true">Get Involved</a><ul class="std-dd"><li><a href="apscc-partnerships.html">Partnerships</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdUZFDc9m2z_Pirx_e2OCjnR8c0oIOk5C7mISId8oCu51lo9g/viewform">Donate</a></li><li><a href="apscc-contact.html">Contact Us</a></li></ul></li>
+</ul></nav></header>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="shell hero-inner">
+        <div class="hero-kicker"><i>Science</i> / Policy / People / Action</div>
+        <h1>Transforming campuses and communities for a sustainable future.</h1>
+        <div class="hero-bottom"><div><p class="hero-copy">APSCC is a research-based, not-for-profit organization connecting ecological knowledge, public policy and grassroots practice.</p><div class="hero-actions"><a class="button button-primary" href="apscc-our-work.html">Explore our work</a><a class="button button-ghost" href="#partner">Partner with APSCC</a></div></div></div>
+      </div>
+    </section>
+    <!-- Institutional recognition: replace typographic placeholders with approved partner marks if licensed -->
+    <section class="recognition" aria-label="Global recognition and engagement"><div class="shell recognition-grid"><div class="recognition-label">Global recognition<br>&amp; engagement</div><div class="recognition-item"><strong>UN ECOSOC</strong>Special Consultative Status</div><div class="recognition-item"><strong>UNEP</strong>Accredited organization</div><div class="recognition-item"><strong>UNEA</strong>Observer engagement</div><div class="recognition-item"><strong>IPBES</strong>Task-force engagement</div><div class="recognition-item"><strong>UN Decade</strong>Cities &amp; Youth focal point</div></div></section>
+    <!-- Triple planetary crisis -->
+    <section class="section challenges"><div class="shell"><div class="eyebrow">The challenge</div><h2 class="section-title reveal">One planet. Three interlocking crises.</h2><p class="lede reveal">Climate change, nature loss, and pollution and waste are inseparable. Solutions must be, too.</p><div class="challenge-grid"><article class="challenge reveal"><span class="challenge-no">01</span><span class="challenge-icon">◌</span><h3>Climate</h3><p>Building resilience where people learn, work, live and depend on healthy ecosystems.</p></article><article class="challenge reveal"><span class="challenge-no">02</span><span class="challenge-icon">⌁</span><h3>Biodiversity</h3><p>Protecting species, habitats, soil and water systems that sustain life and livelihoods.</p></article><article class="challenge reveal"><span class="challenge-no">03</span><span class="challenge-icon">⟲</span><h3>Pollution &amp; waste</h3><p>Advancing prevention, circularity and practical systems that keep materials in use.</p></article></div></div></section>
+    <!-- Institutional profile -->
+    <section class="section" id="about"><div class="shell profile-grid"><div class="profile-copy"><div class="eyebrow">Who we are</div><h2 class="section-title reveal">A bridge between global commitments and local action.</h2><p class="reveal">From Puducherry, India, APSCC brings research, collaboration and participation together to help campuses and communities become engines of sustainability.</p><a class="text-link" href="apscc-about.html">Discover APSCC <span>→</span></a></div><aside class="profile-aside reveal" aria-label="APSCC profile"><div><b>2011 →</b><span>Research-based, not-for-profit organization</span></div><div><b>Puducherry</b><span>Rooted in India; engaged globally</span></div><div><b>Science × policy × practice</b><span>From knowledge and protocols to implementation</span></div></aside></div></section>
+    <!-- ICCARP programmes -->
+    <section class="section programs" id="programs"><div class="shell"><div class="section-head"><div><div class="eyebrow">ICCARP</div><h2 class="section-title reveal">Six nature-positive programmes, connected by one resilient future.</h2></div><a class="text-link" href="apscc-iccarp.html">Explore ICCARP <span>→</span></a></div><div class="program-grid"><article class="program reveal"><span class="program-number">01</span><h3>Green Campuses</h3><p>Helping universities and higher-education institutions embed sustainability in everyday systems and learning.</p><a href="apscc-gcgc.html" aria-label="Explore Green Campuses">↗</a></article><article class="program reveal"><span class="program-number">02</span><h3>Lab-to-Land</h3><p>Education and action research that moves evidence from institutions into communities.</p><a href="apscc-iccarp.html" aria-label="Explore Lab-to-Land">↗</a></article><article class="program reveal"><span class="program-number">03</span><h3>Regenerative Agriculture</h3><p>Supporting soil, farming and animal-care practices designed for long-term ecological health.</p><a href="apscc-iccarp.html" aria-label="Explore Regenerative Agriculture">↗</a></article><article class="program reveal"><span class="program-number">04</span><h3>Fauna of Concern</h3><p>Conservation action for wildlife and the habitats on which vulnerable species depend.</p><a href="apscc-iccarp.html" aria-label="Explore Fauna of Concern">↗</a></article><article class="program reveal"><span class="program-number">05</span><h3>Wetlands &amp; Aquifers</h3><p>Cooperation for the restoration and stewardship of vital freshwater ecosystems.</p><a href="apscc-iccarp.html" aria-label="Explore Wetlands and Aquifers">↗</a></article><article class="program reveal"><span class="program-number">06</span><h3>Industrial Symbiosis</h3><p>Revitalising village industries and green skills through circular, locally grounded solutions.</p><a href="apscc-iccarp.html" aria-label="Explore Industrial Symbiosis">↗</a></article></div></div></section>
+    <!-- Flagship campaign -->
+    <section class="flagship"><div class="shell flagship-grid"><div class="flag-copy"><div class="eyebrow flag-label">Flagship campaign</div><h2 class="reveal">Green Campuses<br>for Green Cities.</h2><p class="reveal">A national-level initiative for universities and higher educational institutions, advancing campus sustainability as a catalyst for healthier, more resilient cities.</p><div class="campaign-line">A UN Decade on Ecosystem Restoration — Cities &amp; Youth challenge.</div><div class="hero-actions"><a class="button button-primary" href="apscc-gcgc.html">Join the campaign</a></div><div class="flag-word">GCGC</div></div><div class="flag-image" role="img" aria-label="Modern green building viewed among trees"></div></div></section>
+    <!-- Policy to practice -->
+    <section class="section"><div class="shell"><div class="eyebrow">From policy to practice</div><h2 class="section-title reveal">Designed for the real work of change.</h2><div class="practice-grid"><article class="practice-card reveal"><span class="pill">Institutional transformation</span><h3>Protocols with a practical life.</h3><p>Green Protocols, sustainability capacity-building and climate vulnerability assessments make strong commitments usable in educational institutions, industries, residences and wetlands.</p></article><article class="practice-card reveal"><span class="pill">Local implementation</span><h3>Systems that meet communities where they are.</h3><p>From Biodiversity Management Committees and plastic-free school campuses to technical support for sustainable waste management, APSCC works with local partners to turn intent into action.</p></article></div></div></section>
+    <!-- Science & policy -->
+    <section class="section global" id="engagement"><div class="shell global-grid"><div><div class="eyebrow">Science, policy &amp; global engagement</div><h2 class="section-title reveal">A local mandate with a global perspective.</h2><p style="color:#d7e0d9;max-width:520px;margin:22px 0 0;font-size:1rem">As a lead organization for the <a href="apscc-under.html" style="border-bottom:1px solid var(--lime);color:#fff">UN Decade on Ecosystem Restoration Cities &amp; Youth Challenge</a>, APSCC runs three flagship global engagement programmes:</p></div><div class="global-art" role="img" aria-label="View across a green forest canopy"></div></div></section>
+    <!-- Global Engagement programme scroller (AWS case-studies style) -->
+    <section class="cs-section" id="ge-programmes"><div class="shell">
+      <div class="cs-head">
+        <div><div class="eyebrow">Global engagement programmes</div>
+        <h2 class="section-title reveal" style="max-width:640px">Explore our restoration initiatives.</h2></div>
+        <div class="cs-nav"><button class="cs-arrow" data-dir="-1" aria-label="Scroll left">‹</button><button class="cs-arrow" data-dir="1" aria-label="Scroll right">›</button></div>
+      </div>
+    </div>
+    <div class="cs-track-wrap"><div class="cs-track" id="csTrack"><a class="cs-slide" href="apscc-gcgc.html" aria-label="Green Campuses for Green Cities"><img src="assets/under/card-gcgc.png" alt="Green Campuses for Green Cities" loading="lazy"></a><a class="cs-slide" href="apscc-under.html" aria-label="UN Decade — Cities & Youth Challenge"><img src="assets/under/card-under.jpg" alt="UN Decade — Cities & Youth Challenge" loading="lazy"></a><a class="cs-slide" href="apscc-restore-life.html" aria-label="Restore Life"><img src="assets/under/card-rls.jpg" alt="Restore Life" loading="lazy"></a><a class="cs-slide" href="apscc-essw.html" aria-label="Environmental Stewardship & Sustainability Workshop"><img src="assets/under/card-essw.jpg" alt="Environmental Stewardship & Sustainability Workshop" loading="lazy"></a><a class="cs-slide" href="apscc-scc.html" aria-label="Game ON — Sustainable Campus Challenge"><img src="assets/under/card-scc.jpg" alt="Game ON — Sustainable Campus Challenge" loading="lazy"></a></div></div>
+    </section>
+    <!-- Qualitative impact section: intentionally no unverified metrics -->
+    <section class="section"><div class="shell"><div class="impact-header"><div><div class="eyebrow">Impact in action</div><h2 class="section-title reveal">Evidence of change should be as durable as the work.</h2></div><p class="impact-note">Since 2011, APSCC has grown from a Puducherry-rooted initiative into a UNEA-accredited organization with UN ECOSOC Special Consultative Status — leading the UN Decade on Ecosystem Restoration Cities &amp; Youth Challenge and partnering with 15+ UN and global institutions.</p></div><div class="impact-grid"><article class="impact-card reveal"><span class="eyebrow">Campuses</span><h3>Making sustainability part of the institution.</h3><p>Pathways for learning, operations, participation and accountability to move together.</p></article><article class="impact-card reveal"><span class="eyebrow">Communities</span><h3>Working with people closest to the challenge.</h3><p>Co-created approaches that recognize local knowledge and strengthen collective capacity.</p></article><article class="impact-card reveal"><span class="eyebrow">Ecosystems</span><h3>Connecting restoration to daily decisions.</h3><p>Action across soil, water, biodiversity, climate resilience and material flows.</p></article></div><p class="impact-foot">From the Green Campuses for Green Cities campaign to coastal clean-ups, wetland protocols and the Biodiversity Management Committee programme — explore the full record on <a href="apscc-our-work.html" style="color:var(--moss);border-bottom:1px solid currentColor">Our Work</a>.</p></div></section>
+    <!-- Knowledge and latest news -->
+    <section class="section hub" id="knowledge"><div class="shell">
+      <div class="eyebrow">Knowledge hub</div>
+      <h2 class="section-title reveal">Ideas made useful.</h2>
+      <div class="hub-two">
+        <!-- LEFT: featured research + featured news -->
+        <div class="hub-left">
+          <a class="feat-card reveal" href="apscc-research-publications.html">
+            <span class="feat-media"><img src="assets/research/featured-book.jpg" alt="Higher Education and SDG15: Life on Land"></span>
+            <span class="feat-body"><span class="feat-kicker">Featured research</span>
+            <span class="feat-title">Higher Education &amp; SDG 15: Life on Land</span>
+            <span class="feat-desc">APSCC-edited volume (Emerald, 2026) positioning universities as catalysts for land restoration and biodiversity.</span>
+            <span class="feat-more">Explore research →</span></span>
+          </a>
+          <a class="feat-card reveal" href="apscc-news-media.html">
+            <span class="feat-media"><img src="assets/news/featured-gcgc-governor.png" alt="Green Campuses for Green Cities launch"></span>
+            <span class="feat-body"><span class="feat-kicker">Featured news</span>
+            <span class="feat-title">Campaign envisaging green campuses across 1,000 cities by 2030</span>
+            <span class="feat-desc">The Hindu covers the launch of the Green Campuses for Green Cities campaign led by APSCC.</span>
+            <span class="feat-more">All news &amp; media →</span></span>
+          </a>
+        </div>
+        <!-- RIGHT: 3 recent activities -->
+        <div class="hub-right">
+          <div class="eyebrow">Recent activities</div>
+          <a class="act-item reveal" href="apscc-our-work.html">
+            <span class="act-thumb"><img src="assets/activities/coastal-cleanup-2025.png" alt="International Coastal Cleanup Day 2025"></span>
+            <span class="act-meta"><span class="act-yr">2025 · Conservation</span><span class="act-ttl">International Coastal Cleanup Day 2025</span></span>
+          </a>
+          <a class="act-item reveal" href="apscc-our-work.html">
+            <span class="act-thumb"><img src="assets/activities/Jnv-researcheraward.jpeg" alt="Green Campus Initiative at JNV"></span>
+            <span class="act-meta"><span class="act-yr">Recognition</span><span class="act-ttl">Green Campus Champions &amp; Change Maker Award</span></span>
+          </a>
+          <a class="act-item reveal" href="apscc-our-work.html">
+            <span class="act-thumb"><img src="assets/activities/greencampussummit-2013-6239_8711244782_o.jpg" alt="Green Campus Summit"></span>
+            <span class="act-meta"><span class="act-yr">Flagship · Event</span><span class="act-ttl">The Green Campus Summit</span></span>
+          </a>
+          <a class="act-item reveal" href="apscc-bmc.html">
+            <span class="act-thumb"><img src="assets/bmc/bmc-inauguration.jpg" alt="BMC capacity-building programme"></span>
+            <span class="act-meta"><span class="act-yr">2026 · Biodiversity</span><span class="act-ttl">BMC Capacity-Building Programme, Puducherry</span></span>
+          </a>
+          <a class="act-item reveal" href="apscc-under.html">
+            <span class="act-thumb"><img src="assets/under/hero-restore-life.jpg" alt="UN Decade ecosystem restoration"></span>
+            <span class="act-meta"><span class="act-yr">2021–2030 · UN Decade</span><span class="act-ttl">Cities &amp; Youth Restoration Challenge</span></span>
+          </a>
+          <a class="act-item reveal" href="apscc-yss.html">
+            <span class="act-thumb"><img src="assets/yss/yss-1.jpg" alt="Young Soil Scientist programme"></span>
+            <span class="act-meta"><span class="act-yr">Education · Soils</span><span class="act-ttl">Young Soil Scientist Programme</span></span>
+          </a>
+          <a class="act-item reveal" href="apscc-iccarp.html">
+            <span class="act-thumb"><img src="assets/iccarp/iccarp-hero.jpg" alt="ICCARP programme"></span>
+            <span class="act-meta"><span class="act-yr">Programme</span><span class="act-ttl">ICCARP — Climate Adaptation &amp; Resilience</span></span>
+          </a>
+          <a class="act-item reveal" href="apscc-essw.html">
+            <span class="act-thumb"><img src="assets/under/card-essw.jpg" alt="Environmental Stewardship & Sustainability Workshop"></span>
+            <span class="act-meta"><span class="act-yr">Workshop</span><span class="act-ttl">Environmental Stewardship &amp; Sustainability Workshop</span></span>
+          </a>
+          <a class="act-item reveal" href="apscc-scc.html">
+            <span class="act-thumb"><img src="assets/under/card-scc.jpg" alt="Sustainable Campus Challenge"></span>
+            <span class="act-meta"><span class="act-yr">Campus · Challenge</span><span class="act-ttl">Game ON — Sustainable Campus Challenge</span></span>
+          </a>
+          <p style="margin-top:20px"><a class="text-link" href="apscc-our-work.html">All activities <span>→</span></a></p>
+        </div>
+      </div>
+    </div></section>
+    <!-- Partner CTA -->
+    <section class="partner" id="partner"><div class="shell partner-grid"><div><div class="eyebrow">Partner with APSCC</div><h2 class="section-title reveal">What could we make possible together?</h2><p>We work with governments, learning institutions, funders, businesses, researchers and communities ready to make sustainability practical, credible and lasting.</p><div class="partner-types"><a href="mailto:info@apsccglobal.org?subject=Partnership%20Inquiry%20%E2%80%94%20Government%20%26%20Municipalities&body=Dear%20APSCC%20Team%2C%0A%0AI%20am%20reaching%20out%20on%20behalf%20of%20our%20government%20agency%2Fmunicipality%20to%20explore%20partnership%20opportunities%20with%20APSCC%20regarding%20green%20protocols%2C%20urban%20sustainability%2C%20and%20UN%20Decade%20restoration%20initiatives.%0A%0AOrganization%3A%20%0AContact%20Person%3A%20%0APhone%2FDesignation%3A%20%0APrimary%20Area%20of%20Interest%3A%20%0A%0AWe%20would%20welcome%20an%20initial%20dialogue.%0A%0ABest%20regards%2C">Government &amp; municipalities →</a><a href="mailto:info@apsccglobal.org?subject=Partnership%20Inquiry%20%E2%80%94%20Universities%20%26%20Higher%20Education&body=Dear%20APSCC%20Team%2C%0A%0AI%20am%20writing%20from%20our%20university%2Finstitution%20to%20inquire%20about%20joining%20the%20Green%20Campuses%20for%20Green%20Cities%20campaign%2C%20ULSF%20Talloires%20Declaration%2C%20and%20SDG-specific%20policy%20implementation.%0A%0AInstitution%20Name%3A%20%0ALocation%3A%20%0AKey%20Contact%3A%20%0AProposed%20Collaboration%3A%20%0A%0AThank%20you%20and%20we%20look%20forward%20to%20connecting.%0A%0ABest%20regards%2C">Universities &amp; schools →</a><a href="mailto:info@apsccglobal.org?subject=Partnership%20Inquiry%20%E2%80%94%20Funders%20%26%20Foundations&body=Dear%20APSCC%20Team%2C%0A%0AOur%20organization%2Ffoundation%20is%20interested%20in%20supporting%20or%20co-funding%20APSCC%27s%20high-impact%20ecological%20restoration%2C%20lab-to-land%20programs%2C%20and%20climate%20adaptation%20initiatives.%0A%0AFoundation%2FOrganization%3A%20%0AContact%20Name%3A%20%0AFocus%20Area%3A%20%0A%0AWe%20would%20like%20to%20schedule%20a%20brief%20call.%0A%0ABest%20regards%2C">Funders &amp; foundations →</a><a href="mailto:info@apsccglobal.org?subject=Partnership%20Inquiry%20%E2%80%94%20CSR%20%26%20Industry%20Partners&body=Dear%20APSCC%20Team%2C%0A%0AWe%20would%20like%20to%20explore%20CSR%20collaboration%2C%20industrial%20symbiosis%2C%20and%20waste%20management%20compliance%20partnerships%20with%20APSCC.%0A%0ACompany%20Name%3A%20%0ASector%2FIndustry%3A%20%0AContact%20Details%3A%20%0A%0APlease%20let%20us%20know%20your%20availability%20for%20a%20discussion.%0A%0ABest%20regards%2C">Corporate &amp; CSR partners →</a><a href="mailto:info@apsccglobal.org?subject=Partnership%20Inquiry%20%E2%80%94%20Researchers%20%26%20Scientific%20Networks&body=Dear%20APSCC%20Team%2C%0A%0AI%20am%20interested%20in%20collaborating%20on%20science-policy%20research%2C%20joint%20publications%2C%20or%20academic%20exchange%20with%20APSCC.%0A%0AAffiliation%2FResearch%20Group%3A%20%0AField%20of%20Study%3A%20%0AProposed%20Topic%3A%20%0A%0ABest%20regards%2C">Researchers &amp; networks →</a><a href="mailto:info@apsccglobal.org?subject=Partnership%20Inquiry%20%E2%80%94%20Youth%20%26%20Community%20Action&body=Dear%20APSCC%20Team%2C%0A%0AI%20am%20contacting%20you%20on%20behalf%20of%20our%20youth%2Fcommunity%20organization%20to%20participate%20in%20the%20UN%20Decade%20Youth%20Restoration%20Challenge%20and%20local%20action%20drives.%0A%0AGroup%2FSchool%20Name%3A%20%0ALocation%3A%20%0AContact%20Details%3A%20%0A%0AWe%20look%20forward%20to%20collaborating.%0A%0ABest%20regards%2C">Students &amp; communities →</a></div></div><aside class="partner-side reveal"><div class="eyebrow">Start a conversation</div><h3>Bring a challenge.<br>Find a pathway.</h3><p>Tell us the challenge you’re working on, and we’ll help you find a practical, credible pathway forward.</p><a class="button button-primary" href="apscc-contact.html">Contact APSCC</a></aside></div></section>
+  </main>
+  <!-- Footer: governance / transparency / contact links are placeholders ready for replacement -->
+  <footer class="std-footer"><div class="wrap">
+<div class="std-ftop">
+<div><p class="std-fbrand">APSCC</p><p class="std-fblurb">Association for Promoting Sustainability in Campuses &amp; Communities &mdash; accredited to the UN Environment Assembly with Observer Status.</p>
+<div class="std-social">
+<a href="https://www.linkedin.com/company/apsccglobal/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24h-4v-7.1c0-1.7-.03-3.9-2.38-3.9-2.38 0-2.75 1.86-2.75 3.78V24h-4V8z"/></svg></a>
+<a href="https://www.facebook.com/apsccglobal/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
+<a href="#" aria-label="Twitter / X"><svg viewBox="0 0 24 24"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.4l-5.8-7.58-6.63 7.58H.48l8.6-9.83L0 1.15h7.6l5.24 6.93 6.06-6.93zm-1.29 19.5h2.04L6.48 3.24H4.29L17.61 20.65z"/></svg></a>
+<a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 3.68A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.4-10.44a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44z"/></svg></a>
+</div></div>
+<div class="std-fcol"><h4>Explore</h4><a href="apscc-homepage-prototype.html">Home</a><a href="apscc-about.html">About</a><a href="apscc-our-work.html">Our Work</a><a href="apscc-research-publications.html">Research</a><a href="apscc-news-media.html">News &amp; Media</a><a href="apscc-partnerships.html">Partnerships</a><a href="apscc-contact.html">Contact Us</a></div>
+<div class="std-fcol std-latest"><h4>Latest Posts</h4><a class="lp" href="https://apsccglobal.org/2025/09/16/iccd2025/" target="_blank" rel="noopener"><span class="k">Activity</span><span class="t">International Coastal Cleanup Day 2025</span></a><a class="lp" href="https://apsccglobal.org/wp-content/uploads/2026/08/NEWS-Campaign-envisaging-green-campuses-across-1000-cities-by-2030-The-Hindu.pdf" target="_blank" rel="noopener"><span class="k">News</span><span class="t">Campaign envisaging green campuses across 1,000 cities</span></a><a class="lp" href="https://bookstore.emerald.com/higher-education-and-sdg15-hb-9781837422739.html" target="_blank" rel="noopener"><span class="k">Research</span><span class="t">Higher Education &amp; the SDGs: SDG 15 &mdash; Life on Land</span></a></div>
+</div>
+<div class="std-fbottom"><span>Copyright &copy; APSCC All Rights Reserved.</span><a href="apscc-privacy-policy.html">Privacy Policy</a></div>
+</div></footer>
+  
+
+<script>
+(function(){
+  var reveals=document.querySelectorAll('.reveal');
+  if(!reveals.length)return;
+  var reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduced||!('IntersectionObserver' in window)){reveals.forEach(function(el){el.classList.add('show');});return;}
+  var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('show');obs.unobserve(e.target);}});},{threshold:.12});
+  reveals.forEach(function(el){obs.observe(el);});
+  // Safety: reveal anything still hidden shortly after load (e.g. above-the-fold or if observer misses)
+  setTimeout(function(){reveals.forEach(function(el){if(!el.classList.contains('show'))el.classList.add('show');});},400);
+})();
+</script>
+<script>
+(function(){
+  var track=document.getElementById('csTrack');
+  if(!track)return;
+  document.querySelectorAll('.cs-arrow').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var dir=parseInt(btn.getAttribute('data-dir'),10);
+      var card=track.querySelector('.cs-slide');
+      var step=card?card.getBoundingClientRect().width+28:600;
+      track.scrollBy({left:dir*step,behavior:'smooth'});
+    });
+  });
+})();
+</script>
+<script>
+(function(){var b=document.querySelector('.std-burger'),m=document.querySelector('.std-menu');
+if(b&&m){b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);});}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="APSCC Privacy Policy - how we handle your information, compliant with India's Digital Personal Data Protection Act 2023.">
+<title>Privacy Policy &mdash; APSCC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:opsz,wght@5..120,500;5..120,600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#11271f;--paper:#f5f3ed;--cream:#e8e4d8;--moss:#315c45;--lime:#c9dc67;--clay:#bd6846;--line:rgba(17,39,31,.17);--sans:"DM Sans",Arial,sans-serif;--serif:"Playfair Display",Georgia,serif;--mono:"DM Mono",monospace}
+*{box-sizing:border-box;margin:0}body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.6}a{color:var(--moss);text-decoration:none}a:hover{text-decoration:underline}
+.pp-main{max-width:820px;margin:auto;padding:70px 32px 100px}
+.pp-eyebrow{font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--clay)}
+.pp-title{font:500 clamp(2.6rem,6vw,4.4rem)/1 var(--serif);letter-spacing:-.04em;margin:14px 0 10px}
+.pp-eff{font-size:.9rem;color:#55705e;margin-bottom:34px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.pp-main h2{font:500 1.5rem/1.2 var(--serif);letter-spacing:-.02em;margin:36px 0 10px;color:var(--ink)}
+.pp-main p{margin:12px 0;color:#2c4237;font-size:1rem}
+.pp-main ul{margin:12px 0 12px 4px;padding-left:22px;color:#2c4237}
+.pp-main li{margin:6px 0}
+.pp-contact{background:#fff;border-left:3px solid var(--moss);padding:18px 22px;font-size:.95rem;line-height:1.7}
+.pp-note{font-size:.88rem;color:#55705e}
+
+/* ===== Standardized header (white strip) ===== */
+.std-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid rgba(17,39,31,.14)}
+.std-nav{position:relative;max-width:1250px;margin:auto;padding:0 32px;min-height:104px;display:flex;align-items:center;justify-content:center;gap:20px}
+.std-brand{position:absolute;left:32px;top:50%;transform:translateY(-50%);display:flex;align-items:center}
+.std-brand img{width:96px;height:96px;object-fit:contain;background:#fff;border-radius:8px}
+.std-menu{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0}
+.std-menu>li{position:relative}
+.std-menu>li>a{display:inline-flex;align-items:center;gap:5px;padding:10px 13px;font:600 .84rem/1 var(--sans,"DM Sans",sans-serif);color:#11271f;white-space:nowrap;border-radius:5px;transition:background .15s,color .15s}
+.std-menu>li>a:hover{background:#eef1e6;color:#315c45}
+.std-menu>li>a.active{color:#315c45}
+.std-menu>li.has-dd>a::after{content:"\25BE";font-size:.7em;opacity:.7;margin-left:2px}
+.std-dd{position:absolute;top:calc(100% + 4px);left:0;min-width:290px;background:#fff;border:1px solid rgba(17,39,31,.14);box-shadow:0 14px 34px rgba(17,39,31,.16);border-radius:8px;padding:8px;opacity:0;visibility:hidden;transform:translateY(6px);transition:.18s;list-style:none;margin:0}
+.std-menu>li.has-dd:hover .std-dd,.std-menu>li.has-dd:focus-within .std-dd{opacity:1;visibility:visible;transform:translateY(0)}
+.std-dd li a{display:block;padding:9px 12px;font:500 .83rem/1.3 var(--sans,"DM Sans",sans-serif);color:#28402f;border-radius:5px}
+.std-dd li a:hover{background:#eef1e6;color:#315c45}
+.std-burger{display:none;background:none;border:0;font-size:1.5rem;color:#11271f;cursor:pointer}
+@media(max-width:960px){
+ .std-burger{display:block;position:absolute;right:20px;top:50%;transform:translateY(-50%)}
+ .std-brand img{width:72px;height:72px}
+ .std-menu{display:none;position:absolute;top:104px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;border-bottom:1px solid rgba(17,39,31,.14);padding:10px 20px 18px;box-shadow:0 14px 24px rgba(17,39,31,.12)}
+ .std-menu.open{display:flex}
+ .std-menu>li>a{padding:12px 8px}
+ .std-dd{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;border-left:2px solid rgba(17,39,31,.12);border-radius:0;margin:2px 0 6px 14px;padding:2px 0}
+ .std-menu>li.has-dd>a::after{margin-left:auto}
+}
+/* ===== Standardized footer ===== */
+.std-footer{background:#0b1b15;color:#d7e0d9;padding:56px 0 22px}
+.std-footer .wrap{max-width:1250px;margin:auto;padding:0 32px}
+.std-ftop{display:grid;grid-template-columns:1.6fr 1fr 1.3fr;gap:34px}
+.std-fbrand{font:500 1.55rem var(--serif,"Playfair Display",serif);color:#fff;margin:0 0 10px}
+.std-fblurb{font-size:.85rem;line-height:1.55;color:#aebdb4;max-width:300px;margin:0 0 18px}
+.std-social{display:flex;gap:10px}
+.std-social a{width:38px;height:38px;border:1px solid rgba(255,255,255,.28);border-radius:50%;display:grid;place-items:center;color:#d7e0d9;transition:.15s}
+.std-social a:hover{background:var(--lime,#c9dc67);border-color:var(--lime,#c9dc67);color:#11271f}
+.std-social svg{width:17px;height:17px;fill:currentColor}
+.std-fcol h4{font:500 10px var(--mono,"DM Mono",monospace);letter-spacing:.08em;text-transform:uppercase;color:var(--lime,#c9dc67);margin:0 0 13px}
+.std-fcol a{display:block;font-size:.83rem;margin:8px 0;color:#d7e0d9;text-decoration:none}
+.std-fcol a:hover{text-decoration:underline}
+.std-latest .lp{display:block;padding:11px 0;border-top:1px solid rgba(255,255,255,.14);text-decoration:none}
+.std-latest .lp:first-of-type{border-top:0}
+.std-latest .lp .k{font:500 9px var(--mono,"DM Mono",monospace);letter-spacing:.07em;text-transform:uppercase;color:var(--lime,#c9dc67)}
+.std-latest .lp .t{display:block;font:500 .9rem/1.25 var(--serif,"Playfair Display",serif);color:#eef3ee;margin-top:3px}
+.std-latest .lp:hover .t{text-decoration:underline}
+.std-fbottom{border-top:1px solid rgba(255,255,255,.16);margin-top:44px;padding-top:18px;display:flex;justify-content:space-between;gap:18px;color:#93a59a;font-size:.75rem;flex-wrap:wrap}
+.std-fbottom a{color:#93a59a;text-decoration:underline}
+@media(max-width:820px){.std-ftop{grid-template-columns:1fr;gap:26px}.std-fbottom{flex-direction:column}}
+
+</style>
+</head>
+<body>
+<header class="std-header"><nav class="std-nav" aria-label="Primary">
+<a class="std-brand" href="apscc-homepage-prototype.html" aria-label="APSCC home"><img src="assets/shared/apscc-logo.png" alt="APSCC logo"></a>
+<button class="std-burger" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+<ul class="std-menu">
+<li><a href="apscc-homepage-prototype.html">Home</a></li>
+<li><a href="apscc-about.html">About</a></li>
+<li><a href="apscc-our-work.html">Our Work</a></li>
+<li class="has-dd"><a href="#" aria-haspopup="true">Global Engagement</a><ul class="std-dd"><li><a href="apscc-gcgc.html">Green Campus for Green Cities (GCGC)</a></li><li><a href="apscc-iccarp.html">ICCARP</a></li><li><a href="apscc-yss.html">Young Soil Scientist</a></li><li><a href="apscc-bmc.html">Biodiversity Management Committee (BMC)</a></li><li><a href="apscc-under.html">UN Decade on Ecosystem Restoration Challenge</a></li><li><a href="apscc-restore-life.html">Restore Life</a></li><li><a href="apscc-essw.html">Environmental Stewardship &amp; Sustainability Workshop</a></li><li><a href="apscc-scc.html">Game ON - Sustainable Campus Challenge</a></li></ul></li>
+<li><a href="apscc-research-publications.html">Research</a></li>
+<li><a href="apscc-news-media.html">News &amp; Media</a></li>
+<li class="has-dd"><a href="#" aria-haspopup="true">Get Involved</a><ul class="std-dd"><li><a href="apscc-partnerships.html">Partnerships</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdUZFDc9m2z_Pirx_e2OCjnR8c0oIOk5C7mISId8oCu51lo9g/viewform">Donate</a></li><li><a href="apscc-contact.html">Contact Us</a></li></ul></li>
+</ul></nav></header>
+
+  <main class="pp-main">
+    <div class="pp-wrap">
+      <p class="pp-eyebrow">APSCC / Legal</p>
+      <h1 class="pp-title">Privacy Policy</h1>
+      <p class="pp-eff"><strong>Effective Date:</strong> September 5, 2026 &nbsp;&middot;&nbsp; <strong>Last Updated:</strong> September 5, 2026</p>
+
+      <p>The <strong>Association for Promoting Sustainability in Campuses &amp; Communities (APSCC)</strong> (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) is committed to protecting your privacy and handling your personal data responsibly. This Privacy Policy explains how we handle information when you visit our website <a href="https://apsccglobal.org">apsccglobal.org</a> (the &ldquo;Site&rdquo;), in accordance with the <strong>Digital Personal Data Protection Act, 2023 (DPDP Act)</strong> and other applicable Indian laws, including the Information Technology Act, 2000 and its rules.</p>
+
+      <p>By using this Site or submitting information through our forms, you consent to the practices described in this Policy.</p>
+
+      <h2>1. Nature of Our Site &amp; Information We Collect</h2>
+      <p>Our Site is a largely static, informational website. We do <strong>not</strong> automatically collect, store, or process personal data simply when you browse the Site.</p>
+      <p>We collect personal data only when you <strong>voluntarily provide it</strong> by submitting one of our forms &mdash; which may be hosted on <strong>Google Forms</strong> or embedded website forms (for purposes such as volunteer sign-ups, partnership enquiries, donations, event registration, or feedback). Depending on the form, this may include your:</p>
+      <ul>
+        <li>Name</li>
+        <li>Email address</li>
+        <li>Phone number</li>
+        <li>Organisation / institution (where relevant)</li>
+        <li>Any other information you choose to provide in the form fields.</li>
+      </ul>
+      <p>We collect only information that you provide voluntarily or that is already available in the public domain. We do not knowingly collect data from children without verifiable parental or guardian consent, as required under the DPDP Act.</p>
+
+      <h2>2. How We Use Your Information</h2>
+      <p>Any data you submit is used strictly to:</p>
+      <ul>
+        <li>Respond to your specific enquiries or requests;</li>
+        <li>Coordinate volunteer activities, partnerships and NGO initiatives;</li>
+        <li>Process and acknowledge donations;</li>
+        <li>Send updates about our environmental projects &mdash; only where you have expressly opted in.</li>
+      </ul>
+      <p>We use your data only for the purpose for which it was provided. We do <strong>not</strong> sell, trade, or rent your personal information to third parties.</p>
+
+      <h2>3. Legal Basis &amp; Consent</h2>
+      <p>Under the DPDP Act, we process your personal data on the basis of your <strong>free, specific, informed and unambiguous consent</strong>, given through a clear affirmative action (such as submitting a form). Where processing is for a legitimate use permitted by law, we rely on that basis. You may withdraw your consent at any time (see Section 7), and withdrawal will not affect the lawfulness of processing carried out before withdrawal.</p>
+
+      <h2>4. Third-Party Data Hosting (Google Forms)</h2>
+      <p>Where responses are submitted through <strong>Google Forms</strong>, your data is transmitted to and stored on Google&rsquo;s servers and is subject to Google&rsquo;s own privacy practices. We encourage you to review the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> to understand how Google protects and manages your data. Similarly, our donation links may direct you to third-party platforms governed by their own privacy policies.</p>
+
+      <h2>5. Cookies &amp; Tracking</h2>
+      <p>As a largely static website, we do <strong>not</strong> deploy tracking cookies or behavioural analytics to monitor your browsing. However, third-party platforms you interact with (such as Google, when you open a Google Form, or social-media links) may set cookies of their own, governed by their respective policies.</p>
+
+      <h2>6. Sharing of Personal Information</h2>
+      <p>We do not share your personal information with third parties except: (a) with service providers strictly necessary to deliver a service you requested (e.g. Google Forms); (b) where required by law, regulation, or a valid legal process; or (c) with your explicit consent.</p>
+
+      <h2>7. Your Rights</h2>
+      <p>Under the DPDP Act, 2023, you have the right to:</p>
+      <ul>
+        <li><strong>Access</strong> a summary of the personal data we hold about you and how it is processed;</li>
+        <li><strong>Correct, complete or update</strong> inaccurate or incomplete data;</li>
+        <li><strong>Erase</strong> your personal data where it is no longer required;</li>
+        <li><strong>Withdraw consent</strong> at any time;</li>
+        <li><strong>Nominate</strong> another individual to exercise your rights in the event of death or incapacity;</li>
+        <li><strong>Grievance redressal</strong> &mdash; raise a complaint with us and, if unsatisfied, with the Data Protection Board of India.</li>
+      </ul>
+      <p>To exercise any of these rights &mdash; including deleting your form responses from our records &mdash; please contact us using the details in Section 11.</p>
+
+      <h2>8. Data Retention &amp; Security</h2>
+      <p>We retain personal data only for as long as necessary to fulfil the purpose for which it was collected, or as required by law, after which it is deleted or anonymised. We apply reasonable security safeguards to protect your data against unauthorised access, alteration, disclosure or destruction. Where data is held on third-party platforms (e.g. Google), it is protected by those providers&rsquo; security measures.</p>
+
+      <h2>9. International Data Transfer</h2>
+      <p>Because we use platforms such as Google Forms, your data may be stored or processed on servers located outside India. Such transfers are made in accordance with the DPDP Act and applicable regulations, and we take reasonable steps to ensure your data continues to be protected.</p>
+
+      <h2>10. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time to reflect changes in our practices or the law. Material changes will be posted on this page with a revised &ldquo;Last Updated&rdquo; date. Your continued use of the Site after changes are posted constitutes acceptance of the updated Policy.</p>
+
+      <h2>11. Grievance Officer &amp; Contact</h2>
+      <p>In accordance with the DPDP Act, 2023 and the Information Technology Act, 2000, you may contact our Grievance Officer for any questions, requests, or complaints regarding this Policy or your personal data:</p>
+      <p class="pp-contact">
+        <strong>Grievance Officer</strong><br>
+        Association for Promoting Sustainability in Campuses &amp; Communities (APSCC)<br>
+        No. 23, Kamaraj Salai, Thattanchavady, Puducherry &mdash; 605013, India<br>
+        Email: <a href="mailto:info@apsccglobal.org">info@apsccglobal.org</a>
+      </p>
+      <p class="pp-note">We aim to acknowledge and address grievances within the timelines prescribed under applicable law.</p>
+    </div>
+  </main>
+
+<footer class="std-footer"><div class="wrap">
+<div class="std-ftop">
+<div><p class="std-fbrand">APSCC</p><p class="std-fblurb">Association for Promoting Sustainability in Campuses &amp; Communities &mdash; accredited to the UN Environment Assembly with Observer Status.</p>
+<div class="std-social">
+<a href="https://www.linkedin.com/company/apsccglobal/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24h-4v-7.1c0-1.7-.03-3.9-2.38-3.9-2.38 0-2.75 1.86-2.75 3.78V24h-4V8z"/></svg></a>
+<a href="https://www.facebook.com/apsccglobal/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
+<a href="#" aria-label="Twitter / X"><svg viewBox="0 0 24 24"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.4l-5.8-7.58-6.63 7.58H.48l8.6-9.83L0 1.15h7.6l5.24 6.93 6.06-6.93zm-1.29 19.5h2.04L6.48 3.24H4.29L17.61 20.65z"/></svg></a>
+<a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 3.68A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.4-10.44a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44z"/></svg></a>
+</div></div>
+<div class="std-fcol"><h4>Explore</h4><a href="apscc-homepage-prototype.html">Home</a><a href="apscc-about.html">About</a><a href="apscc-our-work.html">Our Work</a><a href="apscc-research-publications.html">Research</a><a href="apscc-news-media.html">News &amp; Media</a><a href="apscc-partnerships.html">Partnerships</a><a href="apscc-contact.html">Contact Us</a></div>
+<div class="std-fcol std-latest"><h4>Latest Posts</h4><a class="lp" href="https://apsccglobal.org/2025/09/16/iccd2025/" target="_blank" rel="noopener"><span class="k">Activity</span><span class="t">International Coastal Cleanup Day 2025</span></a><a class="lp" href="https://apsccglobal.org/wp-content/uploads/2026/08/NEWS-Campaign-envisaging-green-campuses-across-1000-cities-by-2030-The-Hindu.pdf" target="_blank" rel="noopener"><span class="k">News</span><span class="t">Campaign envisaging green campuses across 1,000 cities</span></a><a class="lp" href="https://bookstore.emerald.com/higher-education-and-sdg15-hb-9781837422739.html" target="_blank" rel="noopener"><span class="k">Research</span><span class="t">Higher Education &amp; the SDGs: SDG 15 &mdash; Life on Land</span></a></div>
+</div>
+<div class="std-fbottom"><span>Copyright &copy; APSCC All Rights Reserved.</span><a href="apscc-privacy-policy.html">Privacy Policy</a></div>
+</div></footer>
+<script>
+(function(){var b=document.querySelector('.std-burger'),m=document.querySelector('.std-menu');
+if(b&&m){b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);});}
+})();
+</script>
+</body>
+</html>

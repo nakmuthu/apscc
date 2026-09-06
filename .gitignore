@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Quick Suite internal version snapshots
+.versions/
+
+# Design working files (kept locally, not part of the published site)
+_design-tools/
+
+# Editor / OS cruft
+*.swp
+Thumbs.db
