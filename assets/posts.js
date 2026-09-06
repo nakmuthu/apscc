@@ -16,6 +16,52 @@
    ============================================================ */
 window.APSCC_POSTS = [
   {
+    date: "2021-07-16",
+    category: "Research",
+    type: "research",
+    title: "Universities as Climate Leaders: APSCC Researchers Contribute to Global Körber Foundation Study",
+    teaser: "Dr. Golda A. Edwin and Dr. M. Nandhivarman contributed to a landmark 7-country study — supported by the Körber Foundation for the Global University Leaders Council — on higher education leadership and governance for sustainability and climate change.",
+    image: "assets/posts/universities-climate-study/cover.jpg",
+    url: "post-universities-climate-study.html",
+    featured: true
+  },
+  {
+    date: "2021-09-12",
+    category: "Education",
+    type: "activity",
+    title: "Learning to Build Resilience: APSCC Supports the UNEP Nature-based Solutions Course",
+    teaser: "As a supporting partner, APSCC endorsed the UNEP/PEDRR course on Nature-based Solutions for Disaster and Climate Resilience \u2014 a free, multilingual programme on the SDG Academy/edX platform reaching 50,000 learners from 192 countries.",
+    image: "assets/posts/nature-based-solutions/hero.jpg",
+    url: "post-nature-based-solutions.html"
+  },
+  {
+    date: "2021-11-27",
+    category: "Conference",
+    type: "activity",
+    title: "International Seminar on Eco-Conscientious Reflective Practices \u2014 APSCC \u00d7 BGCW",
+    teaser: "APSCC and Bharathidasan Government College for Women co-hosted an international seminar on eco-conscious reflective practices, bringing together 200+ delegates to bridge environmental awareness with actionable sustainability.",
+    image: "assets/posts/bgcw-eco-conf/hero.jpg",
+    url: "post-bgcw-eco-conf.html"
+  },
+  {
+    date: "2022-11-02",
+    category: "Conservation",
+    type: "activity",
+    title: "Green Protocol for Wetlands: A Roadmap for Conservation Launched at Pondicherry University",
+    teaser: "APSCC and Pondicherry University unveiled the Green Protocol for Wetlands \u2014 a five-strategy roadmap for wetland conservation \u2014 with the support of the Forest Department and Agriculture Department of Puducherry.",
+    image: "assets/posts/gpw/hero.jpg",
+    url: "post-gpw.html"
+  },
+  {
+    date: "2021-09-28",
+    category: "Partnership",
+    type: "activity",
+    title: "From ESG to SDG: APSCC as Supporting Association at the Economic Times Sustainability Summit 2021",
+    teaser: "APSCC served as a supporting association at the Economic Times 'ESG to SDG: Connected Paths for a Better Future' summit \u2014 a landmark corporate sustainability event bridging ESG principles with the 2030 SDG agenda.",
+    image: "assets/posts/et-sdg-2021/hero.jpg",
+    url: "post-et-sdg-2021.html"
+  },
+  {
     date: "2026-09-01",
     category: "Conservation",
     type: "activity",
