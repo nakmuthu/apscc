@@ -37,9 +37,9 @@
 .stat-band .s b{display:block;font:500 2.1rem/1 var(--serif);letter-spacing:-.03em;color:var(--ocean)}
 .stat-band .s span{font:500 10px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:#55705e;margin-top:6px;display:block}
 /* gallery */
-.gallery{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0;max-width:960px}
-.gallery img{flex:1 1 calc(33.3% - 8px);max-width:calc(33.3% - 8px);height:230px;object-fit:cover;border-radius:4px}
-@media(max-width:640px){.gallery img{flex:1 1 100%;max-width:100%;height:auto}}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:30px 0;max-width:960px;align-items:start}
+.gallery img{width:100%;height:auto;border-radius:4px}
+@media(max-width:640px){.gallery{grid-template-columns:1fr}}
 /* SDG chips */
 .sdg-chips{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0;max-width:760px}
 .sdg-logo{width:88px;height:88px;object-fit:contain;border-radius:4px}
