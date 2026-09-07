@@ -505,3 +505,49 @@ window.APSCC_POSTS = [
   renderFeat("home-feat-research", featOf("research"), "Featured research", "Explore research →");
   renderFeat("home-feat-news", featOf("news"), "Featured news", "All news &amp; media →");
 })();
+
+/* ---- Our Work activities grid (renders into #act-grid if present) ---- */
+(function(){
+  var grid = document.getElementById("act-grid");
+  if (!grid) return;  // safe no-op on pages without the grid
+
+  // Entries that are NOT native post pages and must not appear as activity cards:
+  //  - apscc-bmc.html: section link (category "Biodiversity" has no filter tab)
+  //  - apscc-our-work.html: self-referential ICCD-2025 duplicate of post-iccd-2025.html
+  var EXCLUDE = {
+    "apscc-bmc.html": 1,
+    "apscc-our-work.html": 1
+  };
+
+  function esc(s){
+    return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+  }
+  // Card grid uses compressed thumbnails: turn ".../hero.jpg" into ".../thumb-hero.jpg".
+  function thumb(img){
+    var i = img.lastIndexOf("/");
+    var dir = img.slice(0, i + 1), base = img.slice(i + 1);
+    return base.indexOf("thumb-") === 0 ? img : dir + "thumb-" + base;
+  }
+  // Year label; preserve the one custom range in the data.
+  function yearLabel(p){
+    return p.url === "post-wsd-2024-25.html" ? "2024\u201325" : p.date.slice(0, 4);
+  }
+
+  var posts = (window.APSCC_POSTS || [])
+    .filter(function(p){ return !EXCLUDE[p.url]; })
+    .slice()
+    .sort(function(a, b){ return b.date.localeCompare(a.date); });
+
+  grid.innerHTML = posts.map(function(p){
+    var cat = (p.category || "").toLowerCase();
+    return '<a class="act-card fade-in" href="' + p.url + '"'
+         + ' data-cat="' + esc(cat) + '" data-date="' + esc(p.date) + '">'
+         + '<span class="ac-media"><img src="' + thumb(p.image) + '" alt="' + esc(p.title) + '" loading="lazy"></span>'
+         + '<span class="ac-body">'
+         + '<span class="ac-top"><span class="act-category">' + esc(p.category) + '</span>'
+         + '<span class="act-year">' + esc(yearLabel(p)) + '</span></span>'
+         + '<h3>' + esc(p.title) + '</h3>'
+         + '<p>' + esc(p.teaser) + '</p>'
+         + '</span></a>';
+  }).join("");
+})();
