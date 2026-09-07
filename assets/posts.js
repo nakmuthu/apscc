@@ -16,6 +16,135 @@
    ============================================================ */
 window.APSCC_POSTS = [
   {
+    date: "2017-07-30",
+    category: "Education",
+    type: "activity",
+    title: "Science Beyond the Classroom: APSCC at the Summer Vacation Science Camp, Puducherry 2017",
+    teaser: "APSCC contributed as resource persons at the month-long Summer Vacation Science Camp held at Dr. Abdul Kalam Science Centre and Planetarium \u2014 inspiring 100+ school students to explore sustainability and environmental science.",
+    image: "assets/posts/science-camp-2017/thumb-hero.jpg",
+    url: "post-science-camp-2017.html"
+  },
+  {
+    date: "2015-04-30",
+    category: "Conference",
+    type: "activity",
+    title: "Building a Sustainable Chennai: APSCC at the IIT Madras Sustainability Summit 2015",
+    teaser: "APSCC collaborated with IIT Madras S-NET to host the Sustainability Summit 2015 — a panel discussion on sustainable urban design for Chennai and a case study challenge on solid waste management, bringing together experts and student innovators.",
+    image: "assets/posts/post-snet-iit-2015/thumb-hero.jpg",
+    url: "post-snet-iit-2015.html"
+  },
+  {
+    date: "2016-08-19",
+    category: "Partnership",
+    type: "activity",
+    title: "Building Soil Resilience: APSCC Partners with the FAO Global Soil Partnership",
+    teaser: "APSCC partnered with the FAO Global Soil Partnership \u2014 committing to soil health, organic farming, and local food systems as the foundation of sustainable food security for campuses and communities.",
+    image: "assets/posts/fao-gsp/thumb-hero.jpg",
+    url: "post-fao-gsp.html"
+  },
+  {
+    date: "2013-07-03",
+    category: "Conference",
+    type: "activity",
+    title: "Growth vs. Sustainability: Dr. Golda Edwin at the ISCN 2013 Conference, Singapore",
+    teaser: "Dr. Golda Edwin of APSCC addressed the 7th Annual ISCN Conference at the National University of Singapore \u2014 presenting on what a sustainable campus looks like in a developing country in the plenary 'Growth vs. Sustainability: Are These Mutually Exclusive Goals?'",
+    image: "assets/posts/iscn-singapore/thumb-hero.jpg",
+    url: "post-iscn-singapore.html"
+  },
+  {
+    date: "2013-04-17",
+    category: "Conference",
+    type: "activity",
+    title: "Campus Challenge 2013: VIT University Vellore Receives APSCC's Green Campus Award",
+    teaser: "VIT University, Vellore received the Campus Challenge 2013 Award from APSCC at the Green Campus Summit 2013 in Puducherry — presented by Chief Minister N. Rangasamy to Vice-President Sankar Viswanathan.",
+    image: "assets/posts/gcs-vit-award/thumb-hero.jpg",
+    url: "post-gcs-vit-award.html"
+  },
+  {
+    date: "2014-04-30",
+    category: "Conference",
+    type: "activity",
+    title: "Green Vision 2020: APSCC Title Sponsors S-NET Case Study Competition at IIT Madras 2014",
+    teaser: "APSCC partnered with IIT Madras as title sponsor for S-NET 2014, a case study competition challenging student teams to develop a 6-year 'Green Vision 2020' sustainable development plan for the fictional city of Vilaspur.",
+    image: "assets/posts/post-snet-iit-2014/thumb-hero.jpg",
+    url: "post-snet-iit-2014.html"
+  },
+  {
+    date: "2018-08-20",
+    category: "Conservation",
+    type: "activity",
+    title: "Bahour Lake: Saving Puducherry's Second-Largest Freshwater Lake",
+    teaser: "APSCC and Pondicherry University assessed 26 site-specific threats to Bahour Lake \u2014 an IBA home to 25,000+ waterfowl \u2014 and developed a Green Protocol for sustainable lake management.",
+    image: "assets/posts/bahour-vulnerability/thumb-hero.jpg",
+    url: "post-bahour-vulnerability.html"
+  },
+  {
+    date: "2015-07-04",
+    category: "Partnership",
+    type: "activity",
+    title: "Leading the Way: APSCC Becomes ULSF's Strategic Partner for the Talloires Declaration in India",
+    teaser: "APSCC announced its strategic partnership with ULSF (Association of University Leaders for a Sustainable Future) \u2014 becoming India's champion for the Talloires Declaration, a 10-point action plan for sustainability in higher education signed by 400+ university presidents worldwide.",
+    image: "assets/posts/post-ulsf-partnership/thumb-hero.jpg",
+    url: "post-ulsf-partnership.html",
+    featured: true
+  },
+  {
+    date: "2013-04-30",
+    category: "Conference",
+    type: "activity",
+    title: "On the National Mall: APSCC at the US EPA's 9th National Sustainable Design Expo, Washington D.C.",
+    teaser: "APSCC participated in the US EPA's 9th Annual National Sustainable Design Expo on the National Mall in Washington D.C. \u2014 showcasing India's sustainability initiatives alongside 400 university students, scientists, and engineers from across the globe.",
+    image: "assets/posts/usepa-expo/thumb-hero.jpg",
+    url: "post-usepa-expo.html"
+  },
+  {
+    date: "2018-08-25",
+    category: "Conservation",
+    type: "activity",
+    title: "Oussudu Lake: APSCC's Vulnerability Assessment of Puducherry's First Bird Sanctuary",
+    teaser: "APSCC collaborated with Pondicherry University and Lt. Governor Kiran Bedi's office to conduct a comprehensive vulnerability assessment of Oussudu Lake \u2014 identifying 39 threats and recommending eco-tourism and conservation pathways.",
+    image: "assets/posts/oussudu-vulnerability/thumb-hero.jpg",
+    url: "post-oussudu-vulnerability.html"
+  },
+  {
+    date: "2017-06-04",
+    category: "Education",
+    type: "activity",
+    title: "Living Archive: APSCC Students Visit the French Institute of Pondicherry Herbarium",
+    teaser: "APSCC organised a study visit to the Herbarium of the French Institute of Pondicherry — a botanical treasure housing 24,000+ specimens from 4,659 species, established in 1956 by Pierre Legris.",
+    image: "assets/posts/ifp-herbarium/thumb-hero.jpg",
+    url: "post-ifp-herbarium.html"
+  },
+  {
+    date: "2013-04-05",
+    category: "Conference",
+    type: "activity",
+    title: "The Green Campus Summit 2013: APSCC Hosts India's First International Summit on Campus Sustainability",
+    teaser: "APSCC organised the landmark Green Campus Summit 2013 in Puducherry \u2014 the first international summit of its kind in India \u2014 uniting 200+ delegates from 12 countries to advance campus sustainability across industrialised and developing regions.",
+    image: "assets/posts/gcs-2013/thumb-hero.jpg",
+    url: "post-gcs-2013.html",
+    featured: true
+  },
+  {
+    date: "2018-04-13",
+    category: "Program",
+    type: "activity",
+    title: "A Milestone for Sustainable Development: The Comprehensive Green Protocol for Puducherry",
+    teaser: "The Comprehensive Green Protocol (CGP) \u2014 developed by APSCC, Pondicherry University, PPCC and DST&E \u2014 was launched as a practical framework for educational institutions, industries, residences and organizations across Puducherry to adopt sustainable practices.",
+    image: "assets/posts/cgp/thumb-hero.jpg",
+    url: "post-cgp.html"
+  },
+
+  {
+    date: "2013-08-18",
+    category: "Partnership",
+    type: "activity",
+    title: "Measuring What Matters: APSCC Becomes India's Regional Expert for the Sulitest",
+    teaser: "APSCC became the Regional or National Expert Committee (RNEC) for India for the Sulitest — the world's first international tool for assessing and enhancing sustainability literacy, created in the wake of Rio+20.",
+    image: "assets/posts/sulitest/thumb-hero.jpg",
+    url: "post-sulitest.html"
+  },
+  {
     date: "2021-06-05",
     category: "Conservation",
     type: "activity",
@@ -42,7 +171,6 @@ window.APSCC_POSTS = [
     image: "assets/posts/clp-2019/hero.jpg",
     url: "post-clp-2019.html"
   },
-
   {
     date: "2019-07-23",
     category: "Conference",
@@ -52,7 +180,6 @@ window.APSCC_POSTS = [
     image: "assets/posts/energy-conf-pu/hero.jpg",
     url: "post-energy-conf-pu.html"
   },
-
   {
     date: "2019-04-30",
     category: "Education",
@@ -71,7 +198,6 @@ window.APSCC_POSTS = [
     image: "assets/posts/wildlife-network/hero.jpg",
     url: "post-wildlife-network.html"
   },
-
   {
     date: "2019-01-22",
     category: "Program",
@@ -200,7 +326,6 @@ window.APSCC_POSTS = [
     image: "assets/posts/bosnia-undp/hero.jpg",
     url: "post-bosnia-undp.html"
   },
-
   {
     date: "2024-09-21",
     category: "Conservation",
@@ -228,7 +353,6 @@ window.APSCC_POSTS = [
     image: "assets/posts/zwd-2024/hero.jpg",
     url: "post-zwd-2024.html"
   },
-
   {
     date: "2025-09-20",
     category: "Conservation",
@@ -280,16 +404,67 @@ window.APSCC_POSTS = [
     image: "assets/activities/coastal-cleanup-2025.png", url: "apscc-our-work.html"
   },
   {
-    date: "2015-12-16", category: "Recognition", type: "activity",
-    title: "Green Campus Champions & Change Maker Award",
-    teaser: "APSCC researchers honoured for conceptualising and implementing comprehensive campus greening initiatives.",
-    image: "assets/activities/Jnv-researcheraward.jpeg", url: "apscc-our-work.html"
+    date: "2018-08-10",
+    category: "Conservation",
+    type: "activity",
+    title: "Kanagan Lake: 22 Threats, One Green Protocol",
+    teaser: "APSCC, with Dr. Golda Edwin and Dr. Nandhivarman, assessed Kanagan Lake at Oulgaret Municipality, identifying 22 urgent site-specific threats and recommending a Green Protocol for restoration, biodiversity, and eco-tourism.",
+    image: "assets/posts/kanagan-vulnerability/thumb-hero.jpg",
+    url: "post-kanagan-vulnerability.html"
   },
   {
-    date: "2013-04-05", category: "Event", type: "activity",
-    title: "The Green Campus Summit 2013",
-    teaser: "A global dialogue on sustainability in education — a first-of-its-kind summit for Indian campuses.",
-    image: "assets/activities/greencampussummit-2013-6239_8711244782_o.jpg", url: "apscc-our-work.html"
+    date: "2017-08-20",
+    category: "Education",
+    type: "activity",
+    title: "10,000 Participants, One Mission: SLAPSWM 2017 Transforms Waste Management in Puducherry",
+    teaser: "SLAPSWM 2017–18 brought together 10,000 participants across 90+ sessions spanning Puducherry, Karaikal, Mahe and Yanam, launching the Comprehensive Green Protocol.",
+    image: "assets/posts/slapswm-2017/thumb-hero.jpg",
+    url: "post-slapswm-2017.html"
+  },
+  {
+    date: "2017-06-04",
+    category: "Conservation",
+    type: "activity",
+    title: "Art for the Earth: Winners of the Climate Change & Biodiversity Drawing Contest, 4th Indian Biodiversity Congress",
+    teaser: "APSCC celebrated the winners of a drawing contest themed 'Climate Change and Biodiversity' held in conjunction with the 4th Indian Biodiversity Congress — inspiring young artists to visualise the connections between climate and nature.",
+    image: "assets/posts/ibc-drawing-contest/thumb-hero.jpg",
+    url: "post-ibc-drawing-contest.html"
+  },
+  {
+    date: "2015-12-16",
+    category: "Program",
+    type: "activity",
+    title: "Model Green Campus: APSCC Founders Honoured by Jawahar Navodaya Vidyalaya Alumni for Green Campus Initiative",
+    teaser: "JANVAA honoured APSCC's founders for transforming Jawahar Navodaya Vidyalaya into a model global sustainability campus — featuring biogas, vermicomposting, xeriscaping, and organic gardens.",
+    image: "assets/posts/jnv-gcs-award/thumb-hero.jpg",
+    url: "post-jnv-gcs-award.html"
+  },
+  {
+    date: "2013-01-05",
+    category: "Research",
+    type: "research",
+    title: "Water Through Native Roots: APSCC's Constructed Wetlands Research After UNESCO-IHE Training",
+    teaser: "Following training at UNESCO-IHE (Delft), APSCC researchers demonstrated that native Arundo species matches Typha in constructed wetland water treatment — opening affordable local solutions for communities.",
+    image: "assets/posts/unesco-ihe/thumb-cover.jpg",
+    url: "post-unesco-ihe.html"
+  },
+  {
+    date: "2012-09-28",
+    category: "Conference",
+    type: "activity",
+    title: "Water, Land & Food: APSCC at the International Summer School on Sustainable Territory Management, Todi, Italy",
+    teaser: "Dr. Edwin represented APSCC at the International Summer School on Sustainable Management and Promotion of Territory in Todi, Italy — sharing frameworks for bridging water availability with food security in vulnerable regions.",
+    image: "assets/posts/smpt-italy/thumb-hero.jpg",
+    url: "post-smpt-italy.html"
+  },
+  {
+    date: "2012-09-04",
+    category: "Conference",
+    type: "activity",
+    title: "Rio+20 and Beyond: APSCC at the World Symposium on Sustainable Development at Universities",
+    teaser: "APSCC at the World Symposium on Sustainable Development at Universities 2012 — a parallel event to Rio+20 — presenting on sustainability literacy and the role of higher education in achieving the SDGs.",
+    image: "assets/posts/wssdu-2012/thumb-hero.jpg",
+    url: "post-wssdu-2012.html"
   }
 ];
 
