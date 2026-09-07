@@ -66,6 +66,8 @@
     .act-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
     .act-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);overflow:hidden;text-decoration:none;color:inherit;transition:transform .22s ease,box-shadow .22s ease}
     .act-card:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(17,39,31,.14)}
+    .act-card-static{cursor:default}
+    .act-card-static:hover{transform:none;box-shadow:none}
     .ac-media{position:relative;display:block;width:100%;aspect-ratio:3/2;overflow:hidden;background:#dce4d6}
     .ac-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
     .act-card:hover .ac-media img{transform:scale(1.05)}
@@ -212,7 +214,28 @@
 .std-fbottom a{color:#93a59a;text-decoration:underline}
 @media(max-width:820px){.std-ftop{grid-template-columns:1fr;gap:26px}.std-fbottom{flex-direction:column}}
 
+
+/* apscc:reduced-motion */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important}
+  .fade-in,.reveal{opacity:1 !important;transform:none !important}
+}
 </style>
+<!-- apscc:seo-meta -->
+<link rel="icon" type="image/png" href="assets/shared/apscc-logo.png">
+<link rel="apple-touch-icon" href="assets/shared/apscc-logo.png">
+<link rel="canonical" href="https://apsccglobal.org/apscc-our-work.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="APSCC">
+<meta property="og:title" content="Our Work — APSCC">
+<meta property="og:description" content="Our Work — APSCC's activities, programs and impact across sustainable campuses and communities worldwide.">
+<meta property="og:url" content="https://apsccglobal.org/apscc-our-work.html">
+<meta property="og:image" content="https://apsccglobal.org/assets/activities/iccd-2025-featured.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Our Work — APSCC">
+<meta name="twitter:description" content="Our Work — APSCC's activities, programs and impact across sustainable campuses and communities worldwide.">
+<meta name="twitter:image" content="https://apsccglobal.org/assets/activities/iccd-2025-featured.jpg">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -477,7 +500,7 @@
 
 
 
-<a class="act-card fade-in" href="#" data-cat="conservation" data-date="2024-01-01"><span class="ac-media ac-media-ph" style="background:linear-gradient(135deg,#193e47,#2f7d6b 60%,#7ab648)"><span class="ac-ph-label">Conservation</span></span><span class="ac-body"><span class="ac-top"><span class="act-category">Conservation</span><span class="act-year">2024</span></span><h3>JIPMER Solid Waste Management Consultancy</h3><p>Consultancy partnership with JIPMER hospital for implementing sustainable waste management protocols.</p></span></a>
+<div class="act-card act-card-static fade-in" data-cat="conservation" data-date="2024-01-01"><span class="ac-media ac-media-ph" style="background:linear-gradient(135deg,#193e47,#2f7d6b 60%,#7ab648)"><span class="ac-ph-label">Conservation</span></span><span class="ac-body"><span class="ac-top"><span class="act-category">Conservation</span><span class="act-year">2024</span></span><h3>JIPMER Solid Waste Management Consultancy</h3><p>Consultancy partnership with JIPMER hospital for implementing sustainable waste management protocols.</p></span></div>
 
 
 
