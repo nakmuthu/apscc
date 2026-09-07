@@ -398,12 +398,6 @@ window.APSCC_POSTS = [
     image: "assets/bmc/bmc-inauguration.jpg", url: "apscc-bmc.html"
   },
   {
-    date: "2025-09-16", category: "Conservation", type: "activity",
-    title: "International Coastal Cleanup Day 2025",
-    teaser: "Beach cleanup mobilization across the Puducherry coastline with Pondicherry University & Forest Department.",
-    image: "assets/activities/coastal-cleanup-2025.png", url: "apscc-our-work.html"
-  },
-  {
     date: "2018-08-10",
     category: "Conservation",
     type: "activity",
@@ -513,10 +507,8 @@ window.APSCC_POSTS = [
 
   // Entries that are NOT native post pages and must not appear as activity cards:
   //  - apscc-bmc.html: section link (category "Biodiversity" has no filter tab)
-  //  - apscc-our-work.html: self-referential ICCD-2025 duplicate of post-iccd-2025.html
   var EXCLUDE = {
-    "apscc-bmc.html": 1,
-    "apscc-our-work.html": 1
+    "apscc-bmc.html": 1
   };
 
   function esc(s){
