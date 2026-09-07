@@ -26,23 +26,6 @@
     .button-ghost{border:1px solid rgba(255,255,255,.8);color:#fff;background:transparent}.button-ghost:hover{background:#fff;color:var(--ink)}
     .button-dark{background:var(--moss);color:#fff;border:0}.button-dark:hover{background:#264836}
 
-    /* Standardized Header */
-    .std-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid rgba(17,39,31,.14);overflow:visible}
-    .std-nav{position:relative;max-width:1250px;margin:auto;padding:0 32px;min-height:104px;display:flex;align-items:center;justify-content:center;gap:20px}
-    .std-brand{position:absolute;left:32px;top:50%;transform:translateY(-50%);display:flex;align-items:center}
-    .std-brand img{height:96px;width:auto;object-fit:contain}
-    .std-menu{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0}
-    .std-menu>li{position:relative}
-    .std-menu>li>a{display:inline-flex;align-items:center;gap:5px;padding:10px 13px;font:600 .84rem/1 var(--sans);color:#11271f;white-space:nowrap;border-radius:5px;transition:background .15s,color .15s}
-    .std-menu>li>a:hover{background:#eef1e6;color:#315c45}
-    .std-menu>li>a.active{color:#315c45}
-    .std-menu>li.has-dd>a::after{content:"\25BE";font-size:.7em;opacity:.7;margin-left:2px}
-    .std-dd{position:absolute;top:calc(100% + 4px);left:0;min-width:290px;background:#fff;border:1px solid rgba(17,39,31,.14);box-shadow:0 14px 34px rgba(17,39,31,.16);border-radius:8px;padding:8px;opacity:0;visibility:hidden;transform:translateY(6px);transition:.18s;list-style:none;margin:0}
-    .std-menu>li.has-dd:hover .std-dd,.std-menu>li.has-dd:focus-within .std-dd{opacity:1;visibility:visible;transform:translateY(0)}
-    .std-dd li a{display:block;padding:9px 12px;font:500 .83rem/1.3 var(--sans);color:#28402f;border-radius:5px}
-    .std-dd li a:hover{background:#eef1e6;color:#315c45}
-    .std-burger{display:none;background:none;border:0;font-size:1.5rem;color:#11271f;cursor:pointer}
-
     /* Page Hero */
     .partner-hero{background:linear-gradient(135deg, #0d261c 0%, #16382a 60%, #1d4534 100%);color:#fff;padding:110px 0 80px;position:relative;overflow:hidden}
     .partner-hero::after{content:"";position:absolute;right:-10%;bottom:-20%;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle, rgba(201,220,103,0.12) 0%, rgba(0,0,0,0) 70%);pointer-events:none}
@@ -129,27 +112,6 @@
     .partner-side{align-self:end;background:var(--moss);padding:36px;border-radius:10px}
     .partner-side h3{font:500 2.1rem/1 var(--serif);margin:0 0 15px;color:#fff}
     .partner-side p{font-size:.94rem;margin:0 0 24px;color:#d4e3da}
-
-    /* Standardized Footer */
-    .std-footer{background:#0b1b15;color:#d7e0d9;padding:56px 0 22px}
-    .std-footer .wrap{max-width:1250px;margin:auto;padding:0 32px}
-    .std-ftop{display:grid;grid-template-columns:1.6fr 1fr 1.3fr;gap:34px}
-    .std-fbrand{font:500 1.55rem var(--serif);color:#fff;margin:0 0 10px}
-    .std-fblurb{font-size:.85rem;line-height:1.55;color:#aebdb4;max-width:300px;margin:0 0 18px}
-    .std-social{display:flex;gap:10px}
-    .std-social a{width:38px;height:38px;border:1px solid rgba(255,255,255,.28);border-radius:50%;display:grid;place-items:center;color:#d7e0d9;transition:.15s}
-    .std-social a:hover{background:var(--lime);border-color:var(--lime);color:#11271f}
-    .std-social svg{width:17px;height:17px;fill:currentColor}
-    .std-fcol h4{font:500 10px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--lime);margin:0 0 13px}
-    .std-fcol a{display:block;font-size:.83rem;margin:8px 0;color:#d7e0d9;text-decoration:none}
-    .std-fcol a:hover{text-decoration:underline}
-    .std-latest .lp{display:block;padding:11px 0;border-top:1px solid rgba(255,255,255,.14);text-decoration:none}
-    .std-latest .lp:first-of-type{border-top:0}
-    .std-latest .lp .k{font:500 9px var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--lime)}
-    .std-latest .lp .t{display:block;font:500 .9rem/1.25 var(--serif);color:#eef3ee;margin-top:3px}
-    .std-latest .lp:hover .t{text-decoration:underline}
-    .std-fbottom{border-top:1px solid rgba(255,255,255,.16);margin-top:44px;padding-top:18px;display:flex;justify-content:space-between;gap:18px;color:#93a59a;font-size:.75rem;flex-wrap:wrap}
-    .std-fbottom a{color:#93a59a;text-decoration:underline}
 
     @media(max-width:1024px){
       .partner-grid{grid-template-columns:repeat(2, 1fr)}
