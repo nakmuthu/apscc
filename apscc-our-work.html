@@ -652,6 +652,27 @@
   
 </script>
 <script>
+// Reveal fade-in elements that are NOT part of the paginated .act-grid
+// (Flagship Pillars, Impact band, Explore cards). The act-grid cards are
+// revealed by their own observer in the script above.
+(function(){
+  var cards=Array.prototype.slice.call(document.querySelectorAll('.fade-in')).filter(function(el){
+    return !el.closest('.act-grid');
+  });
+  if(!cards.length)return;
+  if(!('IntersectionObserver' in window)){
+    cards.forEach(function(c){c.classList.add('visible');});
+    return;
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}
+    });
+  },{threshold:0.1});
+  cards.forEach(function(c){io.observe(c);});
+})();
+</script>
+<script>
 (function(){var b=document.querySelector('.std-burger'),m=document.querySelector('.std-menu');
 if(b&&m){b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);});}
 })();
