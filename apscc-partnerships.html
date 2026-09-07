@@ -11,7 +11,7 @@
   <style>
     :root{--ink:#11271f;--paper:#f5f3ed;--cream:#eae6d9;--moss:#315c45;--lime:#c9dc67;--clay:#bd6846;--line:rgba(17,39,31,.17);--sans:"DM Sans",Arial,sans-serif;--serif:"Playfair Display",Georgia,serif;--mono:"DM Mono",monospace}
     *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.5} a{color:inherit;text-decoration:none} img{max-width:100%;display:block} button{font:inherit}.skip{position:absolute;left:-10000px;top:auto}.skip:focus{left:1rem;top:1rem;z-index:99;background:#fff;padding:.7rem 1rem;border:2px solid var(--ink)}
-    
+
     .shell{max-width:1280px;margin:auto;padding:0 32px}
     .eyebrow{font:500 11px/1.2 var(--mono);letter-spacing:.1em;text-transform:uppercase}
     .eyebrow::before{content:"";display:inline-block;width:25px;border-top:1px solid currentColor;margin:0 9px 3px 0}
@@ -80,13 +80,13 @@
     .partner-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:28px;margin-top:32px}
     .partner-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;position:relative;overflow:hidden}
     .partner-card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(17,39,31,.1);border-color:var(--moss)}
-    
+
     .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:18px}
     .card-tag{font:500 9.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:4px 9px;border-radius:4px;background:#eef3ea;color:var(--moss);border:1px solid rgba(49,92,69,.15)}
     .card-tag.un{background:#e6f4fb;color:#0072CE;border-color:rgba(0,114,206,.2)}
     .card-tag.challenge{background:#fdf3eb;color:#D96B27;border-color:rgba(217,107,39,.2)}
     .card-tag.alliance{background:#f4edf7;color:#662D91;border-color:rgba(102,45,145,.2)}
-    
+
     /* Uniform 35-40% Surface Area Logo Container */
     .card-logo-wrap{height:145px;width:100%;display:grid;place-items:center;background:#ffffff;border-radius:10px;padding:14px;border:1px solid rgba(17,39,31,.12);box-shadow:inset 0 0 10px rgba(0,0,0,.02), 0 2px 8px rgba(0,0,0,.03);margin-bottom:22px}
     .card-logo-wrap img{max-height:118px;max-width:94%;width:auto;height:auto;object-fit:contain;transition:transform .25s ease}
@@ -166,11 +166,32 @@
       .std-menu{display:none;position:absolute;top:80px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;border-bottom:1px solid rgba(17,39,31,.14);padding:10px 20px 18px;box-shadow:0 14px 24px rgba(17,39,31,.12)}
       .std-menu.open{display:flex}
     }
-  </style>
+
+/* apscc:reduced-motion */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important}
+  .fade-in,.reveal{opacity:1 !important;transform:none !important}
+}
+</style>
+<!-- apscc:seo-meta -->
+<link rel="icon" type="image/png" href="assets/shared/apscc-logo.png">
+<link rel="apple-touch-icon" href="assets/shared/apscc-logo.png">
+<link rel="canonical" href="https://apsccglobal.org/apscc-partnerships.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="APSCC">
+<meta property="og:title" content="APSCC — Global Partnerships & UN Accreditations">
+<meta property="og:description" content="APSCC International Partnerships — Accredited to UNEP with UN ECOSOC Special Consultative Status, connecting global science-policy frameworks with campus and community action.">
+<meta property="og:url" content="https://apsccglobal.org/apscc-partnerships.html">
+<meta property="og:image" content="https://apsccglobal.org/assets/shared/apscc-logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="APSCC — Global Partnerships & UN Accreditations">
+<meta name="twitter:description" content="APSCC International Partnerships — Accredited to UNEP with UN ECOSOC Special Consultative Status, connecting global science-policy frameworks with campus and community action.">
+<meta name="twitter:image" content="https://apsccglobal.org/assets/shared/apscc-logo.png">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  
+
   <!-- Header Navigation -->
   <header class="std-header">
     <nav class="std-nav" aria-label="Primary">
@@ -250,7 +271,7 @@
       <div class="shell">
         <div class="eyebrow">Global Action & Impact</div>
         <h2 class="section-title">Connecting Science, Policy, People, and Practice.</h2>
-        
+
         <div class="spotlight-card">
           <div>
             <span class="spotlight-badge">Multilateral Engagement</span>
@@ -694,15 +715,15 @@
           <p>We work with international agencies, governments, academic institutions, foundations, and communities ready to translate global goals into practical, measurable outcomes.</p>
           <div class="partner-types">
             <a href="mailto:info@apsccglobal.org?subject=Partnership%20Inquiry%20%E2%80%94%20Government%20%26%20Municipalities&body=Dear%20APSCC%20Team%2C%0A%0AI%20am%20reaching%20out%20on%20behalf%20of%20our%20government%20agency%2Fmunicipality%20to%20explore%20partnership%20opportunities%20with%20APSCC%20regarding%20green%20protocols%2C%20urban%20sustainability%2C%20and%20UN%20Decade%20restoration%20initiatives.%0A%0AOrganization%3A%20%0AContact%20Person%3A%20%0APhone%2FDesignation%3A%20%0APrimary%20Area%20of%20Interest%3A%20%0A%0AWe%20would%20welcome%20an%20initial%20dialogue.%0A%0ABest%20regards%2C">Government & Municipalities →</a>
-            
+
             <a href="mailto:info@apsccglobal.org?subject=Partnership%20Inquiry%20%E2%80%94%20Universities%20%26%20Higher%20Education&body=Dear%20APSCC%20Team%2C%0A%0AI%20am%20writing%20from%20our%20university%2Finstitution%20to%20inquire%20about%20joining%20the%20Green%20Campuses%20for%20Green%20Cities%20campaign%2C%20ULSF%20Talloires%20Declaration%2C%20and%20SDG-specific%20policy%20implementation.%0A%0AInstitution%20Name%3A%20%0ALocation%3A%20%0AKey%20Contact%3A%20%0AProposed%20Collaboration%3A%20%0A%0AThank%20you%20and%20we%20look%20forward%20to%20connecting.%0A%0ABest%20regards%2C">Universities & HEIs →</a>
-            
+
             <a href="mailto:info@apsccglobal.org?subject=Partnership%20Inquiry%20%E2%80%94%20Funders%20%26%20Foundations&body=Dear%20APSCC%20Team%2C%0A%0AOur%20organization%2Ffoundation%20is%20interested%20in%20supporting%20or%20co-funding%20APSCC%27s%20high-impact%20ecological%20restoration%2C%20lab-to-land%20programs%2C%20and%20climate%20adaptation%20initiatives.%0A%0AFoundation%2FOrganization%3A%20%0AContact%20Name%3A%20%0AFocus%20Area%3A%20%0A%0AWe%20would%20like%20to%20schedule%20a%20brief%20call.%0A%0ABest%20regards%2C">Funders & Foundations →</a>
-            
+
             <a href="mailto:info@apsccglobal.org?subject=Partnership%20Inquiry%20%E2%80%94%20CSR%20%26%20Industry%20Partners&body=Dear%20APSCC%20Team%2C%0A%0AWe%20would%20like%20to%20explore%20CSR%20collaboration%2C%20industrial%20symbiosis%2C%20and%20waste%20management%20compliance%20partnerships%20with%20APSCC.%0A%0ACompany%20Name%3A%20%0ASector%2FIndustry%3A%20%0AContact%20Details%3A%20%0A%0APlease%20let%20us%20know%20your%20availability%20for%20a%20discussion.%0A%0ABest%20regards%2C">CSR & Industry Partners →</a>
-            
+
             <a href="mailto:info@apsccglobal.org?subject=Partnership%20Inquiry%20%E2%80%94%20Researchers%20%26%20Scientific%20Networks&body=Dear%20APSCC%20Team%2C%0A%0AI%20am%20interested%20in%20collaborating%20on%20science-policy%20research%2C%20joint%20publications%2C%20or%20academic%20exchange%20with%20APSCC.%0A%0AAffiliation%2FResearch%20Group%3A%20%0AField%20of%20Study%3A%20%0AProposed%20Topic%3A%20%0A%0ABest%20regards%2C">Researchers & Networks →</a>
-            
+
             <a href="mailto:info@apsccglobal.org?subject=Partnership%20Inquiry%20%E2%80%94%20Youth%20%26%20Community%20Action&body=Dear%20APSCC%20Team%2C%0A%0AI%20am%20contacting%20you%20on%20behalf%20of%20our%20youth%2Fcommunity%20organization%20to%20participate%20in%20the%20UN%20Decade%20Youth%20Restoration%20Challenge%20and%20local%20action%20drives.%0A%0AGroup%2FSchool%20Name%3A%20%0ALocation%3A%20%0AContact%20Details%3A%20%0A%0AWe%20look%20forward%20to%20collaborating.%0A%0ABest%20regards%2C">Youth & Community Leads →</a>
           </div>
         </div>
@@ -765,7 +786,7 @@
           filterBtns.forEach(function(b){b.classList.remove('active'); b.setAttribute('aria-selected', 'false');});
           this.classList.add('active');
           this.setAttribute('aria-selected', 'true');
-          
+
           var filter = this.getAttribute('data-filter');
 
           partnerCards.forEach(function(card){
@@ -996,12 +1017,12 @@
     function openModal(id) {
       var data = partnerData[id];
       if(!data) return;
-      
+
       document.getElementById('modalImg').src = data.img;
       document.getElementById('modalImg').alt = data.title;
       document.getElementById('modalTitle').textContent = data.title;
       document.getElementById('modalRole').textContent = data.role;
-      
+
       var body = document.getElementById('modalBody');
       var html = '<h4>Summary & Scope</h4><p>' + data.summary + '</p>';
       html += '<h4>Key Initiatives & Deliverables</h4><ul class="modal-list">';
@@ -1009,9 +1030,9 @@
         html += '<li>' + item + '</li>';
       });
       html += '</ul>';
-      
+
       body.innerHTML = html;
-      
+
       var modal = document.getElementById('partnerModal');
       modal.classList.add('open');
       modal.setAttribute('aria-hidden', 'false');
