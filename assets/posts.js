@@ -16,6 +16,96 @@
    ============================================================ */
 window.APSCC_POSTS = [
   {
+    date: "2025-10-28",
+    category: "Conference",
+    type: "activity",
+    title: "APSCC at a Two-Day Conference on Clean Environment and Recycling Technology",
+    teaser: "APSCC participated in a two-day national conference bringing together discussion on clean-environment practice, recycling and sustainability.",
+    image: "assets/posts/two-day-clean-environment-conference/hero.jpg",
+    url: "post-two-day-clean-environment-conference.html"
+  },
+  {
+    date: "2016-04-21",
+    category: "Education",
+    type: "activity",
+    title: "Sustainable Cities in the Classroom: APSCC and Jawahar Navodaya Vidyalaya at TSL 2016",
+    teaser: "APSCC partnered with Jawahar Navodaya Vidyalaya in a Trust for Sustainable Living programme linking student ideas, sustainable cities and the Green Campus Initiative.",
+    image: "assets/posts/tsl-sustainable-cities-2016/hero.jpg",
+    url: "post-tsl-sustainable-cities-2016.html"
+  },
+  {
+    date: "2015-01-01",
+    category: "Research",
+    type: "research",
+    title: "Contributed to Solar Campus at Pondicherry University",
+    teaser: "APSCC contributed to a published planning study for developing Pondicherry University’s Silver Jubilee Campus as a solar campus.",
+    image: "assets/posts/pondicherry-university-solar-campus/hero.jpg",
+    url: "post-pondicherry-university-solar-campus.html"
+  },
+  {
+    date: "2015-01-01",
+    category: "Education",
+    type: "activity",
+    title: "Green Skill Development: Learning for Environmental Work",
+    teaser: "APSCC contributed a lecture to the Green Skill Development Programme, linking environmental knowledge with the skills needed for practical sustainability work.",
+    image: "assets/posts/green-skill-development-programme/hero.jpg",
+    url: "post-green-skill-development-programme.html"
+  },
+  {
+    date: "2014-09-03",
+    category: "Conference",
+    type: "research",
+    title: "Student-Centred Sustainability Outreach at WSSD-U 2014",
+    teaser: "APSCC presented an oral and poster contribution on integrated, student-centred sustainability outreach at the 2nd World Symposium on Sustainable Development at Universities.",
+    image: "assets/posts/wssdu-student-outreach-2014/hero.jpg",
+    url: "post-wssdu-student-outreach-2014.html"
+  },
+  {
+    date: "2011-09-19",
+    category: "Conference",
+    type: "research",
+    title: "Sustainable Urban Strategies: APSCC at the APSA Congress in Tokyo",
+    teaser: "APSCC presented urban-sustainability research at the 11th International Congress of the Asian Planning Schools Association at the University of Tokyo.",
+    image: "assets/posts/apsa-sustainable-urban-strategies-2011/hero.jpg",
+    url: "post-apsa-sustainable-urban-strategies-2011.html"
+  },
+  {
+    date: "2011-09-06",
+    category: "Conference",
+    type: "research",
+    title: "Water Footprinting for Groundwater Management: APSCC at 8th ICUWM",
+    teaser: "APSCC presented research on water footprinting as a tool for sustainable groundwater management at the 8th International Conference on Urban Watershed Management.",
+    image: "assets/posts/urban-watershed-groundwater-2011/hero.jpg",
+    url: "post-urban-watershed-groundwater-2011.html"
+  },
+  {
+    date: "2011-01-01",
+    category: "Education",
+    type: "activity",
+    title: "Green Campuses and Local Food Systems: A School-Based Sustainability Approach",
+    teaser: "APSCC’s school-based work connected local food production, green practices, soil and water stewardship, and learning through action.",
+    image: "assets/posts/school-green-practices-lab-to-land/hero.jpg",
+    url: "post-school-green-practices-lab-to-land.html"
+  },
+  {
+    date: "2011-01-01",
+    category: "Conservation",
+    type: "research",
+    title: "From Kitchen Waste to Biogas: APSCC at the IWA Conference, BITS Pilani Goa",
+    teaser: "APSCC participated in an International Water Association conference exploring biological treatment, bioremediation and energy recovery from waste.",
+    image: "assets/posts/bits-iwa-biogas-2011/hero.jpg",
+    url: "post-bits-iwa-biogas-2011.html"
+  },
+  {
+    date: "2010-01-01",
+    category: "Conservation",
+    type: "activity",
+    title: "DEWATS at Puducherry Central Prison: A Nature-Based Wastewater System",
+    teaser: "APSCC was part of a 2010 initiative at Puducherry Central Prison that used decentralised wastewater treatment and constructed wetlands.",
+    image: "assets/posts/kalapet-prison-dewats-2010/hero.jpg",
+    url: "post-kalapet-prison-dewats-2010.html"
+  },
+  {
     date: "2017-07-30",
     category: "Education",
     type: "activity",
