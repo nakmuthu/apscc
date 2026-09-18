@@ -7,6 +7,9 @@
 # Design working files (kept locally, not part of the published site)
 _design-tools/
 
+# Archived / unused assets (kept locally, not part of the published site)
+_archive/
+
 # Editor / OS cruft
 *.swp
 Thumbs.db
